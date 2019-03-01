@@ -10,7 +10,7 @@
 		C4CB2C8D21F1447D00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8C21F1447D00462911 /* HealthKit.framework */; };
 		C4CB2C9021F14CDE00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8F21F14CDE00462911 /* HealthKit.framework */; };
 		C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2221F12AE5002A8800 /* AppDelegate.swift */; };
-		C4E97E2521F12AE5002A8800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2421F12AE5002A8800 /* ViewController.swift */; };
+		C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */; };
 		C4E97E2821F12AE5002A8800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E2621F12AE5002A8800 /* Main.storyboard */; };
 		C4E97E2A21F12AE6002A8800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E2921F12AE6002A8800 /* Assets.xcassets */; };
 		C4E97E2D21F12AE6002A8800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */; };
@@ -22,6 +22,8 @@
 		C4E97E5E21F12AE7002A8800 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E5D21F12AE7002A8800 /* ExtensionDelegate.swift */; };
 		C4E97E6021F12AE7002A8800 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E5F21F12AE7002A8800 /* NotificationController.swift */; };
 		C4E97E6221F12AE8002A8800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E6121F12AE8002A8800 /* Assets.xcassets */; };
+		C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */; };
+		C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +88,7 @@
 		C4CB2C8F21F14CDE00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		C4E97E1F21F12AE5002A8800 /* FoodFindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E97E2221F12AE5002A8800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4E97E2421F12AE5002A8800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
 		C4E97E2721F12AE5002A8800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4E97E2921F12AE6002A8800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E97E2C21F12AE6002A8800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,6 +107,8 @@
 		C4E97E6321F12AE8002A8800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4E97E6421F12AE8002A8800 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodFindr.entitlements; sourceTree = "<group>"; };
+		C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +173,10 @@
 			children = (
 				C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */,
 				C4E97E2221F12AE5002A8800 /* AppDelegate.swift */,
-				C4E97E2421F12AE5002A8800 /* ViewController.swift */,
+				C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */,
 				C4E97E2621F12AE5002A8800 /* Main.storyboard */,
+				C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */,
+				C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */,
 				C4E97E2921F12AE6002A8800 /* Assets.xcassets */,
 				C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */,
 				C4E97E2E21F12AE6002A8800 /* Info.plist */,
@@ -413,7 +419,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E97E2521F12AE5002A8800 /* ViewController.swift in Sources */,
+				C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */,
+				C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */,
+				C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */,
 				C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
