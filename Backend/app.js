@@ -18,23 +18,26 @@
 // [START app]
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+var users = require('./users');
+users.startUserDb();
+
 
 app.get('/', (req, res) => {
-  res.status(200).send('Welcome to FoodFindr Backend!').end();
+  res.status(200).send('Welcome to FoodFindr Backend!\n').end();
 });
 
 var testResponse = {
-  quote: "Hello!",
-  character: "Tony Stark",
-  image: "https://nerdist.com/wp-content/uploads/2016/04/Iron-Man.jpg"
+  user_id: "5",
+  character: "Tony Stark"
 }
-var character_id = '1009610'
-// getQuotes(character_id, 10).then(function(res) {
-//   console.log(JSON.stringify(res))
-// });
-
-app.get('/userData', (req, res) => {
-  res.status(200).send(testResponse).end();
+app.post('/userData', (req, res) => {
+  res.status(200).end();
+  let uname = users.addUser(req.body.username, req.body.data);
+  console.log("New User Added!");
+  console.log(uname, users.getUser(uname));
 });
 
 // Start the server
