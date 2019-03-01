@@ -28,12 +28,12 @@ app.get('/', (req, res) => {
   res.status(200).send('Welcome to FoodFindr Backend!\n').end();
 });
 
-app.get('/getUser', (req, res) => {
+app.get('/user', (req, res) => {
   console.log(req.query);
   res.status(200).send(users.getUser(req.query.username)).end();
 });
 
-app.post('/addUser', (req, res) => {
+app.post('/user', (req, res) => {
   res.status(200).end();
   let uname = users.addUser(req.body.username, req.body.data);
   console.log("New User Added!");
