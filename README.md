@@ -11,9 +11,10 @@ User:
 		Desired Weight
 		Current Activity Level (workouts per week)
 		Post request:
+			server/addUser
 			{
 				"username": <username (string)>,
-				"data": <userdata (json)>
+				"data": <userdata (object)>
 			}
 	Activity History
 	Recipe History

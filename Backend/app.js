@@ -24,16 +24,16 @@ app.use(bodyParser.json());
 var users = require('./users');
 users.startUserDb();
 
-
 app.get('/', (req, res) => {
   res.status(200).send('Welcome to FoodFindr Backend!\n').end();
 });
 
-var testResponse = {
-  user_id: "5",
-  character: "Tony Stark"
-}
-app.post('/userData', (req, res) => {
+app.get('/user', (req, res) => {
+  console.log(req.query);
+  res.status(200).send(users.getUser(req.query.username)).end();
+});
+
+app.post('/user', (req, res) => {
   res.status(200).end();
   let uname = users.addUser(req.body.username, req.body.data);
   console.log("New User Added!");
