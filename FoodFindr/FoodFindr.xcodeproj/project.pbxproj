@@ -10,7 +10,8 @@
 		1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */; };
 		1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */; };
 		1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */; };
-		1E9FC483222B9BD300E0F464 /* EnterGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC482222B9BD300E0F464 /* EnterGoalsVC.swift */; };
+		1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */; };
+		1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */; };
 		C4CB2C8D21F1447D00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8C21F1447D00462911 /* HealthKit.framework */; };
 		C4CB2C9021F14CDE00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8F21F14CDE00462911 /* HealthKit.framework */; };
 		C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2221F12AE5002A8800 /* AppDelegate.swift */; };
@@ -90,7 +91,8 @@
 		1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserDataViewController.swift; sourceTree = "<group>"; };
-		1E9FC482222B9BD300E0F464 /* EnterGoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterGoalsVC.swift; sourceTree = "<group>"; };
+		1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPreferencesVC.swift; sourceTree = "<group>"; };
+		1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
 		C4CB2C8C21F1447D00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C4CB2C8E21F14CDE00462911 /* FoodFindr WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FoodFindr WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		C4CB2C8F21F14CDE00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -182,10 +184,11 @@
 				C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */,
 				C4E97E2E21F12AE6002A8800 /* Info.plist */,
 				C4E97E2221F12AE5002A8800 /* AppDelegate.swift */,
+				1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */,
 				1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */,
 				1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */,
-				1E9FC482222B9BD300E0F464 /* EnterGoalsVC.swift */,
-				1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */,
+				1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */,
+				1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */,
 				C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */,
 				C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */,
 				C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */,
@@ -436,8 +439,9 @@
 				C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */,
 				C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */,
 				C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */,
-				1E9FC483222B9BD300E0F464 /* EnterGoalsVC.swift in Sources */,
+				1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */,
 				1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */,
+				1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */,
 				C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

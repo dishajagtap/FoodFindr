@@ -3,6 +3,23 @@ CS 125 Project
 
 
 # Notes
+
+###Yohana Notes:
+####Current Scenes Added:
+⋅⋅⋅Homepage (proposal of UI, awaiting confirmation)
+⋅⋅⋅⋅⋅⋅the words on the scene are just place markers and should be repalced with the values
+⋅⋅⋅⋅⋅⋅the meal plan suggestion should output breakfast, lunch, dinner, and snack recipes for the day
+⋅⋅⋅Login (UI connected to swift code)
+⋅⋅⋅Create Account  (UI connected to swift code)
+⋅⋅⋅Enter User Data (UI connected to swift code)
+⋅⋅⋅Enter Diet Preferences (UI connected to swift code)
+
+####To do:
+⋅⋅⋅Build relationships between scenes
+⋅⋅⋅Link UI to Backend, specifically add username and password to database
+
+
+```
 User:
 	Login/Password
 	User Response
@@ -26,4 +43,4 @@ User:
 			Allergies
 		Dietary Preferences
 		Calorie limit
-
+```

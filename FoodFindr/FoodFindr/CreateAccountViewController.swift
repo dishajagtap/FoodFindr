@@ -14,7 +14,13 @@ class CreateAccountViewController: UIViewController {
     
     // MARK: Properties
 
+    @IBOutlet weak var createAccountTitle: UILabel!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     // MARK: Actions
-
+    @IBAction func moveToEnterUserDataSceneButton(_ sender: UIButton) {
+    }
 }
