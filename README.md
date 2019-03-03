@@ -8,8 +8,11 @@ CS 125 Project
 
 #### Current Scenes Added:
 - Homepage (proposal of UI, awaiting confirmation)
--- the words on the scene are just place markers and should be repalced with the values
+
+-- the words on the scene are just place markers and should be replaced with the values
+
 -- the meal plan suggestion should output breakfast, lunch, dinner, and snack recipes for the day
+
 - Login (UI connected to swift code)
 - Create Account  (UI connected to swift code)
 - Enter User Data (UI connected to swift code)
