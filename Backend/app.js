@@ -15,35 +15,35 @@
 
 'use strict';
 
-// [START app]
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
+// // [START app]
+// const express = require('express');
+// const app = express();
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.json());
 
-var users = require('./users');
-users.startUserDb();
+// var users = require('./users');
+// users.startUserDb();
 
 
-app.get('/', (req, res) => {
-  res.status(200).send('Welcome to FoodFindr Backend!\n').end();
-});
+// app.get('/', (req, res) => {
+//   res.status(200).send('Welcome to FoodFindr Backend!\n').end();
+// });
 
-var testResponse = {
-  user_id: "5",
-  character: "Tony Stark"
-}
-app.post('/userData', (req, res) => {
-  res.status(200).end();
-  let uname = users.addUser(req.body.username, req.body.data);
-  console.log("New User Added!");
-  console.log(uname, users.getUser(uname));
-});
+// var testResponse = {
+//   user_id: "5",
+//   character: "Tony Stark"
+// }
+// app.post('/userData', (req, res) => {
+//   res.status(200).end();
+//   let uname = users.addUser(req.body.username, req.body.data);
+//   console.log("New User Added!");
+//   console.log(uname, users.getUser(uname));
+// });
 
-// Start the server
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
-  console.log('Press Ctrl+C to quit.');
-});
-// [END app]
+// // Start the server
+// const PORT = process.env.PORT || 8080;
+// app.listen(PORT, () => {
+//   console.log(`App listening on port ${PORT}`);
+//   console.log('Press Ctrl+C to quit.');
+// });
+// // [END app]
