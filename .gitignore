@@ -35,4 +35,11 @@ DerivedData/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+# Yohana gitignore
+FoodFindr/Pods/
+Backend/node_modules
+Backend/package-lock.json
+Podfile.lock
+
+
 # End of https://www.gitignore.io/api/xcode
