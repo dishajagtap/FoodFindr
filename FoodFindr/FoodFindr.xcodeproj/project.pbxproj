@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E26C59E223287FE00897287 /* MeasurementHelper.swift */; };
 		1E7E6DD02233CE7400F17B0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */; };
-		1E7E6E1822340E3F00F17B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7E6E1722340E3F00F17B0B /* Main.storyboard */; };
+		1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E85EA79223736B7007C1926 /* Main.storyboard */; };
 		1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */; };
 		1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */; };
 		1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */; };
@@ -98,7 +98,7 @@
 		17FDDC60A98FD8B6C5A657EA /* Pods-FoodFindrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodFindrUITests/Pods-FoodFindrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E26C59E223287FE00897287 /* MeasurementHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
 		1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1E7E6E1722340E3F00F17B0B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		1E85EA79223736B7007C1926 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserDataViewController.swift; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 				C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */,
 				C4E97E2921F12AE6002A8800 /* Assets.xcassets */,
 				C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */,
-				1E7E6E1722340E3F00F17B0B /* Main.storyboard */,
+				1E85EA79223736B7007C1926 /* Main.storyboard */,
 			);
 			path = FoodFindr;
 			sourceTree = "<group>";
@@ -448,7 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E97E2D21F12AE6002A8800 /* LaunchScreen.storyboard in Resources */,
-				1E7E6E1822340E3F00F17B0B /* Main.storyboard in Resources */,
+				1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */,
 				1E7E6DD02233CE7400F17B0B /* GoogleService-Info.plist in Resources */,
 				C4E97E2A21F12AE6002A8800 /* Assets.xcassets in Resources */,
 			);
@@ -915,7 +915,7 @@
 				CODE_SIGN_ENTITLEMENTS = FoodFindr/FoodFindr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W84PRR7U53;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FoodFindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -941,7 +941,7 @@
 				CODE_SIGN_ENTITLEMENTS = FoodFindr/FoodFindr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W84PRR7U53;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FoodFindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
