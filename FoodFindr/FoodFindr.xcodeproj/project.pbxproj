@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E26C59E223287FE00897287 /* MeasurementHelper.swift */; };
+		1E7E6DD02233CE7400F17B0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */; };
+		1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E85EA79223736B7007C1926 /* Main.storyboard */; };
+		1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */; };
+		1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */; };
+		1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */; };
+		1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */; };
+		1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */; };
+		1EB43EBD2232B444001AC258 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB43EBC2232B444001AC258 /* Constants.swift */; };
+		268FF6C4B95B9A2CADD6D3EF /* Pods_FoodFindr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD33F997531A00AFA4415FC9 /* Pods_FoodFindr.framework */; };
+		8F632173B6BADE339706ACE9 /* Pods_FoodFindrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F385BFAD83C8998F9BB192 /* Pods_FoodFindrTests.framework */; };
+		9ED00AA8245D1813C2732AA1 /* Pods_FoodFindrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC5ABF9410AC616C7B213A1 /* Pods_FoodFindrUITests.framework */; };
 		C4CB2C8D21F1447D00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8C21F1447D00462911 /* HealthKit.framework */; };
 		C4CB2C9021F14CDE00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8F21F14CDE00462911 /* HealthKit.framework */; };
 		C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2221F12AE5002A8800 /* AppDelegate.swift */; };
 		C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */; };
-		C4E97E2821F12AE5002A8800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E2621F12AE5002A8800 /* Main.storyboard */; };
 		C4E97E2A21F12AE6002A8800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E2921F12AE6002A8800 /* Assets.xcassets */; };
 		C4E97E2D21F12AE6002A8800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */; };
 		C4E97E4821F12AE6002A8800 /* FoodFindr WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C4E97E4721F12AE6002A8800 /* FoodFindr WatchKit App.app */; };
@@ -83,13 +94,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05F385BFAD83C8998F9BB192 /* Pods_FoodFindrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodFindrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FDDC60A98FD8B6C5A657EA /* Pods-FoodFindrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodFindrUITests/Pods-FoodFindrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E26C59E223287FE00897287 /* MeasurementHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
+		1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E85EA79223736B7007C1926 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserDataViewController.swift; sourceTree = "<group>"; };
+		1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPreferencesVC.swift; sourceTree = "<group>"; };
+		1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
+		1EB43EB92232AF73001AC258 /* FoodFindr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodFindr-Bridging-Header.h"; sourceTree = "<group>"; };
+		1EB43EBC2232B444001AC258 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F3B39F686C63620A7BC36E3 /* Pods-FoodFindr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindr.debug.xcconfig"; path = "Target Support Files/Pods-FoodFindr/Pods-FoodFindr.debug.xcconfig"; sourceTree = "<group>"; };
+		2DC5ABF9410AC616C7B213A1 /* Pods_FoodFindrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodFindrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4913A1E4F078B24786F1BF3F /* Pods-FoodFindrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodFindrUITests/Pods-FoodFindrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82F63FBFD962549B2C326BC1 /* Pods-FoodFindrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodFindrTests/Pods-FoodFindrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE04530F2F59959F55109697 /* Pods-FoodFindr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindr.release.xcconfig"; path = "Target Support Files/Pods-FoodFindr/Pods-FoodFindr.release.xcconfig"; sourceTree = "<group>"; };
 		C4CB2C8C21F1447D00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C4CB2C8E21F14CDE00462911 /* FoodFindr WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FoodFindr WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		C4CB2C8F21F14CDE00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		C4E97E1F21F12AE5002A8800 /* FoodFindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E97E2221F12AE5002A8800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
-		C4E97E2721F12AE5002A8800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4E97E2921F12AE6002A8800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E97E2C21F12AE6002A8800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4E97E2E21F12AE6002A8800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,14 +136,24 @@
 		C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodFindr.entitlements; sourceTree = "<group>"; };
 		C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
 		C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DD33F997531A00AFA4415FC9 /* Pods_FoodFindr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodFindr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB659A50B2346D6D1EA1BD94 /* Pods-FoodFindrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrTests.release.xcconfig"; path = "Target Support Files/Pods-FoodFindrTests/Pods-FoodFindrTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A0240B96173F7639B29F774A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4E97E1C21F12AE5002A8800 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C4CB2C8D21F1447D00462911 /* HealthKit.framework in Frameworks */,
+				268FF6C4B95B9A2CADD6D3EF /* Pods_FoodFindr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F632173B6BADE339706ACE9 /* Pods_FoodFindrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED00AA8245D1813C2732AA1 /* Pods_FoodFindrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,11 +187,14 @@
 		C4E97E1621F12AE4002A8800 = {
 			isa = PBXGroup;
 			children = (
+				1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */,
+				1EB43EB92232AF73001AC258 /* FoodFindr-Bridging-Header.h */,
 				C4E97E2121F12AE5002A8800 /* FoodFindr */,
 				C4E97E4B21F12AE6002A8800 /* FoodFindr WatchKit App */,
 				C4E97E5A21F12AE7002A8800 /* FoodFindr WatchKit Extension */,
 				C4E97E2021F12AE5002A8800 /* Products */,
 				C4E97E7921F12B0B002A8800 /* Frameworks */,
+				DF7FD3B25BE9114D28E594C4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,14 +214,21 @@
 			isa = PBXGroup;
 			children = (
 				C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */,
+				C4E97E2E21F12AE6002A8800 /* Info.plist */,
 				C4E97E2221F12AE5002A8800 /* AppDelegate.swift */,
-				C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */,
-				C4E97E2621F12AE5002A8800 /* Main.storyboard */,
+				1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */,
+				1EB43EBC2232B444001AC258 /* Constants.swift */,
+				1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */,
+				1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */,
+				1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */,
+				1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */,
+				1E26C59E223287FE00897287 /* MeasurementHelper.swift */,
 				C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */,
 				C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */,
+				C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */,
 				C4E97E2921F12AE6002A8800 /* Assets.xcassets */,
 				C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */,
-				C4E97E2E21F12AE6002A8800 /* Info.plist */,
+				1E85EA79223736B7007C1926 /* Main.storyboard */,
 			);
 			path = FoodFindr;
 			sourceTree = "<group>";
@@ -213,8 +262,24 @@
 			children = (
 				C4CB2C8F21F14CDE00462911 /* HealthKit.framework */,
 				C4CB2C8C21F1447D00462911 /* HealthKit.framework */,
+				DD33F997531A00AFA4415FC9 /* Pods_FoodFindr.framework */,
+				05F385BFAD83C8998F9BB192 /* Pods_FoodFindrTests.framework */,
+				2DC5ABF9410AC616C7B213A1 /* Pods_FoodFindrUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF7FD3B25BE9114D28E594C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B39F686C63620A7BC36E3 /* Pods-FoodFindr.debug.xcconfig */,
+				AE04530F2F59959F55109697 /* Pods-FoodFindr.release.xcconfig */,
+				82F63FBFD962549B2C326BC1 /* Pods-FoodFindrTests.debug.xcconfig */,
+				FB659A50B2346D6D1EA1BD94 /* Pods-FoodFindrTests.release.xcconfig */,
+				17FDDC60A98FD8B6C5A657EA /* Pods-FoodFindrUITests.debug.xcconfig */,
+				4913A1E4F078B24786F1BF3F /* Pods-FoodFindrUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +289,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4E97E6F21F12AE8002A8800 /* Build configuration list for PBXNativeTarget "FoodFindr" */;
 			buildPhases = (
+				C3C61C757B156DD778C1CFA0 /* [CP] Check Pods Manifest.lock */,
 				C4E97E1B21F12AE5002A8800 /* Sources */,
 				C4E97E1C21F12AE5002A8800 /* Frameworks */,
 				C4E97E1D21F12AE5002A8800 /* Resources */,
 				C4E97E6E21F12AE8002A8800 /* Embed Watch Content */,
+				4E521544EF07A63B4CC705BA /* [CP] Embed Pods Frameworks */,
+				5E8947204A0DBBE5878E5318 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +311,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4E97E7221F12AE8002A8800 /* Build configuration list for PBXNativeTarget "FoodFindrTests" */;
 			buildPhases = (
+				B8F77D86EEA24F31440DE443 /* [CP] Check Pods Manifest.lock */,
 				C4E97E2F21F12AE6002A8800 /* Sources */,
 				C4E97E3021F12AE6002A8800 /* Frameworks */,
 				C4E97E3121F12AE6002A8800 /* Resources */,
@@ -261,6 +330,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4E97E7521F12AE8002A8800 /* Build configuration list for PBXNativeTarget "FoodFindrUITests" */;
 			buildPhases = (
+				5FB87E4375529ACF32D4A89C /* [CP] Check Pods Manifest.lock */,
 				C4E97E3A21F12AE6002A8800 /* Sources */,
 				C4E97E3B21F12AE6002A8800 /* Frameworks */,
 				C4E97E3C21F12AE6002A8800 /* Resources */,
@@ -281,6 +351,7 @@
 			buildPhases = (
 				C4E97E4521F12AE6002A8800 /* Resources */,
 				C4E97E6A21F12AE8002A8800 /* Embed App Extensions */,
+				A0240B96173F7639B29F774A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +392,7 @@
 				TargetAttributes = {
 					C4E97E1E21F12AE5002A8800 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -376,8 +448,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E97E2D21F12AE6002A8800 /* LaunchScreen.storyboard in Resources */,
+				1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */,
+				1E7E6DD02233CE7400F17B0B /* GoogleService-Info.plist in Resources */,
 				C4E97E2A21F12AE6002A8800 /* Assets.xcassets in Resources */,
-				C4E97E2821F12AE5002A8800 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,15 +487,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E521544EF07A63B4CC705BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodFindr/Pods-FoodFindr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodFindr/Pods-FoodFindr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8947204A0DBBE5878E5318 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodFindr/Pods-FoodFindr-resources.sh",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GINInviteResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPPACLPickerResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodFindr/Pods-FoodFindr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB87E4375529ACF32D4A89C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodFindrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8F77D86EEA24F31440DE443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodFindrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3C61C757B156DD778C1CFA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodFindr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4E97E1B21F12AE5002A8800 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */,
+				1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */,
 				C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */,
 				C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */,
 				C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */,
+				1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */,
+				1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */,
+				1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */,
+				1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */,
 				C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */,
+				1EB43EBD2232B444001AC258 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,14 +687,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C4E97E2621F12AE5002A8800 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4E97E2721F12AE5002A8800 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -705,12 +908,15 @@
 		};
 		C4E97E7021F12AE8002A8800 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F3B39F686C63620A7BC36E3 /* Pods-FoodFindr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FoodFindr/FoodFindr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V3N2WKYT3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W84PRR7U53;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FoodFindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -719,6 +925,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs125.FoodFindr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodFindr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -726,12 +934,15 @@
 		};
 		C4E97E7121F12AE8002A8800 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE04530F2F59959F55109697 /* Pods-FoodFindr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FoodFindr/FoodFindr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V3N2WKYT3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W84PRR7U53;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FoodFindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -740,6 +951,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs125.FoodFindr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodFindr-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -747,6 +959,7 @@
 		};
 		C4E97E7321F12AE8002A8800 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F63FBFD962549B2C326BC1 /* Pods-FoodFindrTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -768,6 +981,7 @@
 		};
 		C4E97E7421F12AE8002A8800 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB659A50B2346D6D1EA1BD94 /* Pods-FoodFindrTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -789,6 +1003,7 @@
 		};
 		C4E97E7621F12AE8002A8800 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FDDC60A98FD8B6C5A657EA /* Pods-FoodFindrUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -809,6 +1024,7 @@
 		};
 		C4E97E7721F12AE8002A8800 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4913A1E4F078B24786F1BF3F /* Pods-FoodFindrUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
