@@ -13,18 +13,20 @@ class Recipe {
     var uri: String
     var label: String
     var imageUrl: String
-    var calories: Double
+    var calories: Int
     init(hitJson: JSON) {
         let recipe = hitJson["recipe"]
         self.uri = recipe["uri"].string!
         self.label = recipe["label"].string!
         self.imageUrl = recipe["image"].string!
-        self.calories = recipe["calories"].double!
+        self.calories = recipe["calories"].int!
     }
 }
 
 class MealsViewController: UIViewController {
-
+    @IBOutlet weak var recipeTableView: UITableView!
+    
+    var recipes: [Recipe] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Path loading...")
@@ -35,21 +37,19 @@ class MealsViewController: UIViewController {
             
         }
         let url = URL(fileURLWithPath: path)
-        var recipeArr: [Recipe] = []
         do {
             let data = try Data(contentsOf: url)
             let json = JSON(data)
             let hits = json["hits"]
             for h in hits {
-                recipeArr.append(Recipe(hitJson: h.1))
+                recipes.append(Recipe(hitJson: h.1))
             }
         }
         catch {
             print(error)
         }
+        
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -60,4 +60,16 @@ class MealsViewController: UIViewController {
     }
     */
 
+}
+extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return recipes.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeCell
+        let recipe = recipes[indexPath.row]
+        cell.setCell(recipe: recipe)
+        return cell
+    }
 }
