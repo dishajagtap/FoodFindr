@@ -34,7 +34,6 @@ DerivedData/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
-FoodFindr/FoodFindr.xcodeproj/project.pbxproj
 # Yohana gitignore
 FoodFindr/Pods/
 Backend/node_modules
