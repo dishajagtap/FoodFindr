@@ -14,7 +14,7 @@ class EnterUserDataViewController: UIViewController {
     
     // MARK: Properties
 
-    @IBOutlet weak var enterYourInforTitle: UILabel!
+    @IBOutlet weak var enterYourInfoTitle: UILabel!
     @IBOutlet weak var curWeightTextField: UITextField!
     @IBOutlet weak var curHeightTF: UITextField!
     @IBOutlet weak var desWeightTF: UITextField!
