@@ -49,9 +49,10 @@ User:
 		Desired Weight
 		Current Activity Level (workouts per week)
 		Post request:
+			server/addUser
 			{
 				"username": <username (string)>,
-				"data": <userdata (json)>
+				"data": <userdata (object)>
 			}
 	Activity History
 	Recipe History
@@ -65,3 +66,13 @@ User:
 		Dietary Preferences
 		Calorie limit
 ```
+Recipe API
+curl "https://api.edamam.com/search?app_id=ff7726ea&app_key=f563fb2c7043c921bd01d0eeb0312ebd&from=0&to=3&calories=591-722&health=alcohol-free&q=chicken"
+
+App ID: ff7726ea
+App key: f563fb2c7043c921bd01d0eeb0312ebd
+
+API Header Link:
+https://api.edamam.com/search?app_id=ff7726ea&app_key=f563fb2c7043c921bd01d0eeb0312ebd
+https://developer.edamam.com/edamam-docs-recipe-api
+

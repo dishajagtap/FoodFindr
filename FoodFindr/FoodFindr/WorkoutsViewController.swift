@@ -13,7 +13,7 @@ class WorkoutsViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -22,27 +22,27 @@ class WorkoutsViewController: UIViewController {
         fetchAndUpdateAEB()
         setUpBackgroundDeliveryForAEB()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.barStyle = .black
     }
-    
+
     func healthKitSetup() {
         HealthKitSetupAssistant.authorizeHealthKit()
     }
-    
+
     func fetchAndUpdateAEB() {
         ActiveEnergyBurnedDataStore.fetchActiveEnergyBurned()
         updateAEBLabel()
     }
-    
+
     func updateAEBLabel() {
         DispatchQueue.main.async {
             let activeEnergyBurned = ActiveEnergyBurnedDataStore.getActiveEnergyBurned()
             self.caloriesBurnedValue.text = "\(activeEnergyBurned) kCal"
         }
     }
-    
+
     func setUpBackgroundDeliveryForAEB() {
         let sampleType = HKSampleType.quantityType(forIdentifier: .activeEnergyBurned)!
         let query = HKObserverQuery(sampleType: sampleType, predicate: nil) {
@@ -56,7 +56,7 @@ class WorkoutsViewController: UIViewController {
             debugPrint("enableBackgroundDeliveryForType handler called for \(sampleType) - success: \(complete)")
         }
     }
-    
+
     @IBOutlet public weak var caloriesBurnedLabel: UILabel!
     @IBOutlet public weak var caloriesBurnedValue: UILabel!
 }
