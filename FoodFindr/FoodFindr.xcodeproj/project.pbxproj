@@ -21,6 +21,8 @@
 		9ED00AA8245D1813C2732AA1 /* Pods_FoodFindrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC5ABF9410AC616C7B213A1 /* Pods_FoodFindrUITests.framework */; };
 		A62BBC7D2239BCD100B88642 /* recipe_out_example.json in Resources */ = {isa = PBXBuildFile; fileRef = A62BBC7C2239BCD100B88642 /* recipe_out_example.json */; };
 		A66908D9223A5E2F00BC04E8 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66908D8223A5E2F00BC04E8 /* RecipeCell.swift */; };
+		A6CC62B0223D092E00404691 /* RecipeAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62AE223D092E00404691 /* RecipeAPICaller.swift */; };
+		A6CC62B1223D092E00404691 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62AF223D092E00404691 /* FilterCollectionViewCell.swift */; };
 		C4CB2C8D21F1447D00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8C21F1447D00462911 /* HealthKit.framework */; };
 		C4CB2C9021F14CDE00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8F21F14CDE00462911 /* HealthKit.framework */; };
 		C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2221F12AE5002A8800 /* AppDelegate.swift */; };
@@ -114,6 +116,8 @@
 		82F63FBFD962549B2C326BC1 /* Pods-FoodFindrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodFindrTests/Pods-FoodFindrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A62BBC7C2239BCD100B88642 /* recipe_out_example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipe_out_example.json; sourceTree = "<group>"; };
 		A66908D8223A5E2F00BC04E8 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		A6CC62AE223D092E00404691 /* RecipeAPICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAPICaller.swift; sourceTree = "<group>"; };
+		A6CC62AF223D092E00404691 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE04530F2F59959F55109697 /* Pods-FoodFindr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindr.release.xcconfig"; path = "Target Support Files/Pods-FoodFindr/Pods-FoodFindr.release.xcconfig"; sourceTree = "<group>"; };
 		C4CB2C8C21F1447D00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C4CB2C8E21F14CDE00462911 /* FoodFindr WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FoodFindr WatchKit Extension.entitlements"; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 		C4E97E2121F12AE5002A8800 /* FoodFindr */ = {
 			isa = PBXGroup;
 			children = (
+				A6CC62AF223D092E00404691 /* FilterCollectionViewCell.swift */,
+				A6CC62AE223D092E00404691 /* RecipeAPICaller.swift */,
 				A62BBC7C2239BCD100B88642 /* recipe_out_example.json */,
 				C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */,
 				C4E97E2E21F12AE6002A8800 /* Info.plist */,
@@ -504,6 +510,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FoodFindr/Pods-FoodFindr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
@@ -518,6 +525,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
@@ -632,11 +640,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CC62B0223D092E00404691 /* RecipeAPICaller.swift in Sources */,
 				1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */,
 				1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */,
 				C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */,
 				A66908D9223A5E2F00BC04E8 /* RecipeCell.swift in Sources */,
 				C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */,
+				A6CC62B1223D092E00404691 /* FilterCollectionViewCell.swift in Sources */,
 				C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */,
 				1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */,
 				1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */,
