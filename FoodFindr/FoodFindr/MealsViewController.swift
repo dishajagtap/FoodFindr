@@ -45,6 +45,8 @@ class MealsViewController: UIViewController {
     var recipes: [Recipe] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Meals"
+
         // Do any additional setup after loading the view.
         print("Getting recipes...")
         let apiCaller = RecipeAPICaller()
@@ -57,8 +59,14 @@ class MealsViewController: UIViewController {
             self.recipeTableView.reloadData()
             print(self.recipes)
         }
-        
+
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barStyle = .black
+    }
+
+
     /*
     // MARK: - Navigation
 
@@ -71,7 +79,7 @@ class MealsViewController: UIViewController {
 
 }
 extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
@@ -84,17 +92,17 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.filters.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionViewCell", for: indexPath) as! FilterCollectionViewCell
         cell.setText(text: filters[indexPath.row])
         return cell
     }
-    
-    
-    
+
+
+
 }
