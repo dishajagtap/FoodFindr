@@ -19,17 +19,16 @@
 		268FF6C4B95B9A2CADD6D3EF /* Pods_FoodFindr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD33F997531A00AFA4415FC9 /* Pods_FoodFindr.framework */; };
 		8F632173B6BADE339706ACE9 /* Pods_FoodFindrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F385BFAD83C8998F9BB192 /* Pods_FoodFindrTests.framework */; };
 		9ED00AA8245D1813C2732AA1 /* Pods_FoodFindrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC5ABF9410AC616C7B213A1 /* Pods_FoodFindrUITests.framework */; };
-		A62BBC7D2239BCD100B88642 /* recipe_out_example.json in Resources */ = {isa = PBXBuildFile; fileRef = A62BBC7C2239BCD100B88642 /* recipe_out_example.json */; };
-		A66908D9223A5E2F00BC04E8 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66908D8223A5E2F00BC04E8 /* RecipeCell.swift */; };
-		A6CC62B9223D0ED800404691 /* RecipeAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62B6223D0ED700404691 /* RecipeAPICaller.swift */; };
-		A6CC62BC223D0F0600404691 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62BB223D0F0600404691 /* HealthKitSetupAssistant.swift */; };
-		A6CC62BE223D0F4300404691 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62BD223D0F4300404691 /* FilterCollectionViewCell.swift */; };
-		A6CC62C5223D0F7800404691 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62BF223D0F7800404691 /* UserHealthProfile.swift */; };
-		A6CC62C6223D0F7800404691 /* Data Stores in Resources */ = {isa = PBXBuildFile; fileRef = A6CC62C0223D0F7800404691 /* Data Stores */; };
-		A6CC62C7223D0F7800404691 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = A6CC62C1223D0F7800404691 /* Models */; };
-		A6CC62C8223D0F7800404691 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62C2223D0F7800404691 /* ProfileDataStore.swift */; };
-		A6CC62C9223D0F7800404691 /* ActiveEnergyBurnedDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62C3223D0F7800404691 /* ActiveEnergyBurnedDataStore.swift */; };
-		A6CC62CA223D0F7800404691 /* ActiveEnergyBurnedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62C4223D0F7800404691 /* ActiveEnergyBurnedProfile.swift */; };
+		A6CC62D1223D15DD00404691 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62CD223D15DD00404691 /* FilterCollectionViewCell.swift */; };
+		A6CC62D2223D15DD00404691 /* recipe_out_example.json in Resources */ = {isa = PBXBuildFile; fileRef = A6CC62CE223D15DD00404691 /* recipe_out_example.json */; };
+		A6CC62D5223D167100404691 /* RecipeAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62D3223D167100404691 /* RecipeAPICaller.swift */; };
+		A6CC62D6223D167100404691 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62D4223D167100404691 /* RecipeCell.swift */; };
+		C4071386223CF76B0090F763 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071384223CEFDA0090F763 /* HealthKitSetupAssistant.swift */; };
+		C46CC762223754D70074073C /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CC761223754D70074073C /* UserHealthProfile.swift */; };
+		C48A6C8E223760D200A8AEB0 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C8D223760D200A8AEB0 /* ProfileDataStore.swift */; };
+		C48A6C902237A46900A8AEB0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C8F2237A46900A8AEB0 /* ProfileViewController.swift */; };
+		C48A6C94223B4FB600A8AEB0 /* ActiveEnergyBurnedDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C93223B4FB600A8AEB0 /* ActiveEnergyBurnedDataStore.swift */; };
+		C48A6C96223CDE5C00A8AEB0 /* ActiveEnergyBurnedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C95223CDE5C00A8AEB0 /* ActiveEnergyBurnedProfile.swift */; };
 		C4CB2C8D21F1447D00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8C21F1447D00462911 /* HealthKit.framework */; };
 		C4CB2C9021F14CDE00462911 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB2C8F21F14CDE00462911 /* HealthKit.framework */; };
 		C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E2221F12AE5002A8800 /* AppDelegate.swift */; };
@@ -45,7 +44,6 @@
 		C4E97E6021F12AE7002A8800 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E97E5F21F12AE7002A8800 /* NotificationController.swift */; };
 		C4E97E6221F12AE8002A8800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E97E6121F12AE8002A8800 /* Assets.xcassets */; };
 		C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */; };
-		C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,18 +119,17 @@
 		2DC5ABF9410AC616C7B213A1 /* Pods_FoodFindrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodFindrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4913A1E4F078B24786F1BF3F /* Pods-FoodFindrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodFindrUITests/Pods-FoodFindrUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82F63FBFD962549B2C326BC1 /* Pods-FoodFindrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodFindrTests/Pods-FoodFindrTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A62BBC7C2239BCD100B88642 /* recipe_out_example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipe_out_example.json; sourceTree = "<group>"; };
-		A66908D8223A5E2F00BC04E8 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
-		A6CC62B6223D0ED700404691 /* RecipeAPICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAPICaller.swift; sourceTree = "<group>"; };
-		A6CC62BB223D0F0600404691 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
-		A6CC62BD223D0F4300404691 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
-		A6CC62BF223D0F7800404691 /* UserHealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserHealthProfile.swift; path = Models/UserHealthProfile.swift; sourceTree = "<group>"; };
-		A6CC62C0223D0F7800404691 /* Data Stores */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Data Stores"; sourceTree = "<group>"; };
-		A6CC62C1223D0F7800404691 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
-		A6CC62C2223D0F7800404691 /* ProfileDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileDataStore.swift; path = "Data Stores/ProfileDataStore.swift"; sourceTree = "<group>"; };
-		A6CC62C3223D0F7800404691 /* ActiveEnergyBurnedDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveEnergyBurnedDataStore.swift; path = "Data Stores/ActiveEnergyBurnedDataStore.swift"; sourceTree = "<group>"; };
-		A6CC62C4223D0F7800404691 /* ActiveEnergyBurnedProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveEnergyBurnedProfile.swift; path = Models/ActiveEnergyBurnedProfile.swift; sourceTree = "<group>"; };
+		A6CC62CD223D15DD00404691 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6CC62CE223D15DD00404691 /* recipe_out_example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipe_out_example.json; sourceTree = "<group>"; };
+		A6CC62D3223D167100404691 /* RecipeAPICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeAPICaller.swift; sourceTree = "<group>"; };
+		A6CC62D4223D167100404691 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		AE04530F2F59959F55109697 /* Pods-FoodFindr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindr.release.xcconfig"; path = "Target Support Files/Pods-FoodFindr/Pods-FoodFindr.release.xcconfig"; sourceTree = "<group>"; };
+		C4071384223CEFDA0090F763 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		C46CC761223754D70074073C /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		C48A6C8D223760D200A8AEB0 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		C48A6C8F2237A46900A8AEB0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C48A6C93223B4FB600A8AEB0 /* ActiveEnergyBurnedDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveEnergyBurnedDataStore.swift; sourceTree = "<group>"; };
+		C48A6C95223CDE5C00A8AEB0 /* ActiveEnergyBurnedProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveEnergyBurnedProfile.swift; sourceTree = "<group>"; };
 		C4CB2C8C21F1447D00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C4CB2C8E21F14CDE00462911 /* FoodFindr WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FoodFindr WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		C4CB2C8F21F14CDE00462911 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -157,7 +154,6 @@
 		C4E97E6421F12AE8002A8800 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodFindr.entitlements; sourceTree = "<group>"; };
 		C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
-		C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DD33F997531A00AFA4415FC9 /* Pods_FoodFindr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodFindr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB659A50B2346D6D1EA1BD94 /* Pods-FoodFindrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrTests.release.xcconfig"; path = "Target Support Files/Pods-FoodFindrTests/Pods-FoodFindrTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +202,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C46CC760223754B00074073C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C46CC761223754D70074073C /* UserHealthProfile.swift */,
+				C48A6C95223CDE5C00A8AEB0 /* ActiveEnergyBurnedProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C48A6C8A2237609500A8AEB0 /* Data Stores */ = {
+			isa = PBXGroup;
+			children = (
+				C48A6C8D223760D200A8AEB0 /* ProfileDataStore.swift */,
+				C48A6C93223B4FB600A8AEB0 /* ActiveEnergyBurnedDataStore.swift */,
+			);
+			path = "Data Stores";
+			sourceTree = "<group>";
+		};
 		C4E97E1621F12AE4002A8800 = {
 			isa = PBXGroup;
 			children = (
@@ -235,16 +249,12 @@
 		C4E97E2121F12AE5002A8800 /* FoodFindr */ = {
 			isa = PBXGroup;
 			children = (
-				A6CC62C3223D0F7800404691 /* ActiveEnergyBurnedDataStore.swift */,
-				A6CC62C4223D0F7800404691 /* ActiveEnergyBurnedProfile.swift */,
-				A6CC62C0223D0F7800404691 /* Data Stores */,
-				A6CC62C1223D0F7800404691 /* Models */,
-				A6CC62C2223D0F7800404691 /* ProfileDataStore.swift */,
-				A6CC62BF223D0F7800404691 /* UserHealthProfile.swift */,
-				A6CC62BD223D0F4300404691 /* FilterCollectionViewCell.swift */,
-				A6CC62BB223D0F0600404691 /* HealthKitSetupAssistant.swift */,
-				A6CC62B6223D0ED700404691 /* RecipeAPICaller.swift */,
-				A62BBC7C2239BCD100B88642 /* recipe_out_example.json */,
+				A6CC62D3223D167100404691 /* RecipeAPICaller.swift */,
+				A6CC62D4223D167100404691 /* RecipeCell.swift */,
+				A6CC62CD223D15DD00404691 /* FilterCollectionViewCell.swift */,
+				A6CC62CE223D15DD00404691 /* recipe_out_example.json */,
+				C48A6C8A2237609500A8AEB0 /* Data Stores */,
+				C46CC760223754B00074073C /* Models */,
 				C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */,
 				C4E97E2E21F12AE6002A8800 /* Info.plist */,
 				C4E97E2221F12AE5002A8800 /* AppDelegate.swift */,
@@ -256,12 +266,12 @@
 				1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */,
 				1E26C59E223287FE00897287 /* MeasurementHelper.swift */,
 				C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */,
-				C4FDA36E21F2DD690085FAA0 /* ProfileViewController.swift */,
+				C48A6C8F2237A46900A8AEB0 /* ProfileViewController.swift */,
 				C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */,
 				C4E97E2921F12AE6002A8800 /* Assets.xcassets */,
 				C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */,
 				1E85EA79223736B7007C1926 /* Main.storyboard */,
-				A66908D8223A5E2F00BC04E8 /* RecipeCell.swift */,
+				C4071384223CEFDA0090F763 /* HealthKitSetupAssistant.swift */,
 			);
 			path = FoodFindr;
 			sourceTree = "<group>";
@@ -481,10 +491,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E97E2D21F12AE6002A8800 /* LaunchScreen.storyboard in Resources */,
-				A62BBC7D2239BCD100B88642 /* recipe_out_example.json in Resources */,
-				A6CC62C7223D0F7800404691 /* Models in Resources */,
+				A6CC62D2223D15DD00404691 /* recipe_out_example.json in Resources */,
 				1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */,
-				A6CC62C6223D0F7800404691 /* Data Stores in Resources */,
 				1E7E6DD02233CE7400F17B0B /* GoogleService-Info.plist in Resources */,
 				C4E97E2A21F12AE6002A8800 /* Assets.xcassets in Resources */,
 			);
@@ -533,14 +541,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FoodFindr/Pods-FoodFindr-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -548,14 +554,12 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -663,26 +667,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6CC62B9223D0ED800404691 /* RecipeAPICaller.swift in Sources */,
-				A6CC62C8223D0F7800404691 /* ProfileDataStore.swift in Sources */,
 				1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */,
+				C4071386223CF76B0090F763 /* HealthKitSetupAssistant.swift in Sources */,
+				C48A6C96223CDE5C00A8AEB0 /* ActiveEnergyBurnedProfile.swift in Sources */,
+				A6CC62D1223D15DD00404691 /* FilterCollectionViewCell.swift in Sources */,
 				1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */,
+				A6CC62D5223D167100404691 /* RecipeAPICaller.swift in Sources */,
+				C48A6C94223B4FB600A8AEB0 /* ActiveEnergyBurnedDataStore.swift in Sources */,
 				C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */,
-				A66908D9223A5E2F00BC04E8 /* RecipeCell.swift in Sources */,
-				A6CC62BC223D0F0600404691 /* HealthKitSetupAssistant.swift in Sources */,
 				C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */,
-				A6CC62B1223D092E00404691 /* FilterCollectionViewCell.swift in Sources */,
-				C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */,
-				A6CC62C5223D0F7800404691 /* UserHealthProfile.swift in Sources */,
+				C48A6C8E223760D200A8AEB0 /* ProfileDataStore.swift in Sources */,
+				C48A6C902237A46900A8AEB0 /* ProfileViewController.swift in Sources */,
 				1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */,
-				A6CC62C9223D0F7800404691 /* ActiveEnergyBurnedDataStore.swift in Sources */,
 				1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */,
-				A6CC62BE223D0F4300404691 /* FilterCollectionViewCell.swift in Sources */,
 				1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */,
+				A6CC62D6223D167100404691 /* RecipeCell.swift in Sources */,
+				C46CC762223754D70074073C /* UserHealthProfile.swift in Sources */,
 				1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */,
 				C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */,
 				1EB43EBD2232B444001AC258 /* Constants.swift in Sources */,
-				A6CC62CA223D0F7800404691 /* ActiveEnergyBurnedProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,7 +967,7 @@
 				CODE_SIGN_ENTITLEMENTS = FoodFindr/FoodFindr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = W84PRR7U53;
+				DEVELOPMENT_TEAM = 9V3N2WKYT3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FoodFindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -990,7 +993,7 @@
 				CODE_SIGN_ENTITLEMENTS = FoodFindr/FoodFindr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = W84PRR7U53;
+				DEVELOPMENT_TEAM = 9V3N2WKYT3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FoodFindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
