@@ -39,12 +39,13 @@ class ActiveEnergyBurnedDataStore {
             }
             
             activeEnergyBurnedProfile.activeEnergyBurned = totalEnergy
+            
         })
         HealthKitSetupAssistant.healthStore.execute(energyQuery)
     }
     
     
     static func getActiveEnergyBurned() -> (Double) {
-        return activeEnergyBurnedProfile.activeEnergyBurned!
+        return activeEnergyBurnedProfile.activeEnergyBurned ?? 0.0
     }
 }
