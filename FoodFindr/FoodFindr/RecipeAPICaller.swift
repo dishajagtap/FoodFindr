@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 class RecipeAPICaller {
-    var example_link = "https://api.edamam.com/search?app_id=ff7726ea&app_key=f563fb2c7043c921bd01d0eeb0312ebd&from=0&to=3&calories=591-722&health=alcohol-free&q=chicken"
+    var example_link = "https://api.edamam.com/search?app_id=ff7726ea&app_key=f563fb2c7043c921bd01d0eeb0312ebd&from=0&to=10&calories=591-722&health=alcohol-free&q=chicken"
     func getExampleRecipe() -> DataRequest {
         return AF.request(example_link, method: .get)
     }

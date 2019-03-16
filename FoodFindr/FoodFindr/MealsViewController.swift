@@ -25,7 +25,23 @@ class Recipe {
 
 class MealsViewController: UIViewController {
     @IBOutlet weak var recipeTableView: UITableView!
-    
+    var filters: [String] = [
+        "Protein",
+        "Vegetarian",
+        "Vegan",
+        "Paleo",
+        "Dairy-free",
+        "Gluten-free",
+        "Wheat-free",
+        "Fat-free",
+        "Low-sugar",
+        "Egg-free",
+        "Peanut-free",
+        "Tree-Nut-free",
+        "Soy-free",
+        "Fish-free",
+        "Shellfish-free"
+    ]
     var recipes: [Recipe] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,4 +81,20 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setCell(recipe: recipe)
         return cell
     }
+}
+
+extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.filters.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionViewCell", for: indexPath) as! FilterCollectionViewCell
+        cell.setText(text: filters[indexPath.row])
+        return cell
+    }
+    
+    
+    
 }
