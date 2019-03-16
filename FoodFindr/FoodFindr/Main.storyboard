@@ -36,30 +36,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LZ-vE-54H">
-                                <rect key="frame" x="16" y="380" width="343" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgT-Tn-dEs">
+                                <rect key="frame" x="16" y="253" width="343" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pGc-Tz-Dw8">
-                                <rect key="frame" x="16" y="269" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="caloriesBurnedDisplayText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kWE-RF-MPq"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8e-0H-Ru5">
-                                <rect key="frame" x="16" y="456" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,9 +51,7 @@
                     <navigationItem key="navigationItem" id="fI8-ym-7al"/>
                     <connections>
                         <outlet property="caloriesBurnedLabel" destination="Vmk-fn-CJc" id="gCK-ch-Of9"/>
-                        <outlet property="caloriesBurnedText" destination="pGc-Tz-Dw8" id="J3w-9h-9rq"/>
-                        <outlet property="exerciseMinutesLabel" destination="4LZ-vE-54H" id="eMQ-sD-Z0C"/>
-                        <outlet property="exerciseMinutesText" destination="J8e-0H-Ru5" id="DZ8-Ds-XoJ"/>
+                        <outlet property="caloriesBurnedValue" destination="DgT-Tn-dEs" id="cyu-YW-xiq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -666,5 +647,5 @@
         <image name="Profile" width="30" height="30"/>
         <image name="Workout" width="67.5" height="67.5"/>
     </resources>
-    <color key="tintColor" red="1" green="0.2925590804" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" red="0.0" green="1" blue="0.051177963712694563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
