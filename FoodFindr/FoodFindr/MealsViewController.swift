@@ -29,24 +29,17 @@ class MealsViewController: UIViewController {
     var recipes: [Recipe] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Path loading...")
         // Do any additional setup after loading the view.
-        guard let path = Bundle.main.path(forResource: "recipe_out_example", ofType: "json") else {
-            print("Failed")
-            return
-            
-        }
-        let url = URL(fileURLWithPath: path)
-        do {
-            let data = try Data(contentsOf: url)
-            let json = JSON(data)
+        print("Getting recipes...")
+        let apiCaller = RecipeAPICaller()
+        apiCaller.getExampleRecipe().responseJSON{ response in
+            let json = JSON(response.result.value)
             let hits = json["hits"]
             for h in hits {
-                recipes.append(Recipe(hitJson: h.1))
+                self.recipes.append(Recipe(hitJson: h.1))
             }
-        }
-        catch {
-            print(error)
+            self.recipeTableView.reloadData()
+            print(self.recipes)
         }
         
     }
