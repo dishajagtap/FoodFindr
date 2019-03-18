@@ -11,8 +11,14 @@
 		1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E85EA79223736B7007C1926 /* Main.storyboard */; };
 		1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */; };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */; };
 		1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */; };
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 		1EB43EBD2232B444001AC258 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB43EBC2232B444001AC258 /* Constants.swift */; };
@@ -102,8 +108,14 @@
 		1E85EA79223736B7007C1926 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserDataViewController.swift; sourceTree = "<group>"; };
 		1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 		1EB43EB92232AF73001AC258 /* FoodFindr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodFindr-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -223,8 +235,14 @@
 				C4E97E2221F12AE5002A8800 /* AppDelegate.swift */,
 				1EB43EBC2232B444001AC258 /* Constants.swift */,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */,
 				1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */,
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 				1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */,
@@ -656,6 +674,12 @@
 				1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */,
 				A6CC62D6223D167100404691 /* RecipeCell.swift in Sources */,
 				C46CC762223754D70074073C /* UserHealthProfile.swift in Sources */,
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */,
 				1EB43EBD2232B444001AC258 /* Constants.swift in Sources */,

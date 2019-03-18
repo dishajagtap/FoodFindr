@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yH2-MJ-u7q">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+>>>>>>> Stashed changes
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+>>>>>>> Stashed changes
 =======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
 >>>>>>> Stashed changes
@@ -24,7 +32,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Df-Th-IJo">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                 <rect key="frame" x="113" y="358" width="148" height="96"/>
+=======
+                                <rect key="frame" x="113.29713911867202" y="603.99999999999955" width="147.99999999999955" height="96.000000000000341"/>
+>>>>>>> Stashed changes
+=======
+                                <rect key="frame" x="113.29713911867202" y="603.99999999999955" width="147.99999999999955" height="96.000000000000341"/>
+>>>>>>> Stashed changes
 =======
                                 <rect key="frame" x="113.29713911867202" y="603.99999999999955" width="147.99999999999955" height="96.000000000000341"/>
 >>>>>>> Stashed changes
@@ -82,6 +98,8 @@
             <point key="canvasLocation" x="3884" y="134"/>
         </scene>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <!--View Controller-->
         <scene sceneID="tAM-8V-APU">
             <objects>
@@ -98,6 +116,10 @@
             </objects>
             <point key="canvasLocation" x="3884" y="927"/>
         </scene>
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         <!--Tab Bar Controller-->
@@ -188,6 +210,8 @@
             </objects>
             <point key="canvasLocation" x="2964" y="926.60098522167493"/>
         </scene>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         <!--Homepage-->
         <scene sceneID="qqv-AG-oP6">
@@ -286,6 +310,16 @@
         <!--NavToWorkouts-->
         <scene sceneID="vyM-tM-h5p">
             <objects>
+=======
+        <!--NavToWorkouts-->
+        <scene sceneID="vyM-tM-h5p">
+            <objects>
+>>>>>>> Stashed changes
+=======
+        <!--NavToWorkouts-->
+        <scene sceneID="vyM-tM-h5p">
+            <objects>
+>>>>>>> Stashed changes
                 <navigationController storyboardIdentifier="NavToWorkOuts" title="NavToWorkouts" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ct2-ol-Y2Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Workout" selectedImage="Workout" id="BUg-ao-a5M"/>
 >>>>>>> Stashed changes
@@ -305,6 +339,8 @@
             <point key="canvasLocation" x="2021.5999999999999" y="133.74384236453201"/>
         </scene>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <!--Meals-->
         <scene sceneID="TyS-Bq-uSt">
             <objects>
@@ -314,6 +350,16 @@
         <!--NavToMain-->
         <scene sceneID="TyS-Bq-uSt">
             <objects>
+=======
+        <!--NavToMain-->
+        <scene sceneID="TyS-Bq-uSt">
+            <objects>
+>>>>>>> Stashed changes
+=======
+        <!--NavToMain-->
+        <scene sceneID="TyS-Bq-uSt">
+            <objects>
+>>>>>>> Stashed changes
                 <navigationController title="NavToMain" automaticallyAdjustsScrollViewInsets="NO" id="sIS-e2-vYh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Meal" selectedImage="Meal" id="gio-Yi-pSU"/>
 >>>>>>> Stashed changes
@@ -349,6 +395,8 @@
             <point key="canvasLocation" x="2964" y="1674"/>
         </scene>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <!--Profile-->
         <scene sceneID="6xh-3q-iln">
             <objects>
@@ -358,6 +406,16 @@
         <!--NavToProfile-->
         <scene sceneID="6xh-3q-iln">
             <objects>
+=======
+        <!--NavToProfile-->
+        <scene sceneID="6xh-3q-iln">
+            <objects>
+>>>>>>> Stashed changes
+=======
+        <!--NavToProfile-->
+        <scene sceneID="6xh-3q-iln">
+            <objects>
+>>>>>>> Stashed changes
                 <navigationController title="NavToProfile" automaticallyAdjustsScrollViewInsets="NO" id="gBa-eC-dOT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Profile" selectedImage="Profile" id="lr6-dB-Z9l"/>
 >>>>>>> Stashed changes
@@ -376,6 +434,8 @@
             </objects>
             <point key="canvasLocation" x="2020" y="1675"/>
         </scene>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         <!--Login View Controller-->
         <scene sceneID="WLx-Gc-3vo">
@@ -404,6 +464,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+=======
+        <!--Login Controller Scene-->
+        <scene sceneID="sJm-Sn-uMx">
+            <objects>
+                <viewController title="Login Controller Scene" id="pq2-Qr-kQx" customClass="LoginViewController" customModule="FoodFindr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uB9-qT-aql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+>>>>>>> Stashed changes
+=======
+        <!--Login Controller Scene-->
+        <scene sceneID="sJm-Sn-uMx">
+            <objects>
+                <viewController title="Login Controller Scene" id="pq2-Qr-kQx" customClass="LoginViewController" customModule="FoodFindr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uB9-qT-aql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+>>>>>>> Stashed changes
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CVa-0W-BMO" customClass="GIDSignInButton">
                                 <rect key="frame" x="67.448198467734528" y="414" width="240" height="127.99999999999989"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -453,6 +533,8 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your desired weight? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR2-vt-q4C">
                                 <rect key="frame" x="31.973346819563631" y="493" width="305.99999999999955" height="28.000000000000227"/>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -462,12 +544,22 @@
 <<<<<<< Updated upstream
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logged Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2K-De-9sY">
                                 <rect key="frame" x="142" y="640" width="91" height="21"/>
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5BV-W0-zPE">
                                 <rect key="frame" x="33" y="529" width="308" height="83.000000000000114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -507,6 +599,12 @@
                                     <segue destination="IWL-HW-Hop" kind="show" id="OQS-1y-dIS"/>
                                 </connections>
                             </button>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -521,6 +619,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIz-4n-epq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             <point key="canvasLocation" x="750" y="-695"/>
         </scene>
@@ -543,6 +643,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RiK-uw-i6P"/>
 =======
+=======
+>>>>>>> Stashed changes
             <point key="canvasLocation" x="2020" y="-638"/>
         </scene>
         <!--DietPrefRes-->
@@ -553,6 +655,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+=======
+            <point key="canvasLocation" x="2020" y="-638"/>
+        </scene>
+        <!--DietPrefRes-->
+        <scene sceneID="Ccp-cB-vjk">
+            <objects>
+                <viewController title="DietPrefRes" id="IWL-HW-Hop" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dy6-Kg-Ifc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+>>>>>>> Stashed changes
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2x-06-m4D">
                                 <rect key="frame" x="135.66666666666666" y="714" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -588,6 +702,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HGY-gQ-74z"/>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                     </view>
                     <connections>
@@ -595,12 +715,22 @@
                     </connections>
                 </viewController>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGE-Vg-7cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2022" y="-695"/>
 =======
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ysr-8j-Q9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+=======
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ysr-8j-Q9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+>>>>>>> Stashed changes
+=======
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ysr-8j-Q9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+>>>>>>> Stashed changes
             <point key="canvasLocation" x="2934" y="-638"/>
         </scene>
         <!--Diet Preference Table-->
@@ -658,6 +788,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PII-6E-ZyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3820" y="-638"/>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         </scene>
     </scenes>
