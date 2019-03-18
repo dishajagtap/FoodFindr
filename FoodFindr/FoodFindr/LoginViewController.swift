@@ -29,6 +29,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     }
     
     var handle: AuthStateDidChangeListenerHandle?
+<<<<<<< Updated upstream
 /*
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -44,6 +45,11 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
  */
     override func viewDidLoad() {
         super.viewDidLoad()
+=======
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor(named: "AppThemeColor")
+>>>>>>> Stashed changes
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signInSilently()
@@ -61,6 +67,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
                      open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
     }
+<<<<<<< Updated upstream
     @IBOutlet weak var appTitleLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var signInButton: GIDSignInButton!
@@ -106,3 +113,12 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
  }
  }
  */
+=======
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    @IBAction func googleBtnTapped(_ sender: GIDSignInButton) {
+        GIDSignIn.sharedInstance().signIn()
+        
+    }
+    
+}
+>>>>>>> Stashed changes

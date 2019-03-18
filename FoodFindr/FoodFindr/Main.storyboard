@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yH2-MJ-u7q">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+>>>>>>> Stashed changes
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +23,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Df-Th-IJo">
+<<<<<<< Updated upstream
                                 <rect key="frame" x="113" y="358" width="148" height="96"/>
+=======
+                                <rect key="frame" x="113.29713911867202" y="603.99999999999955" width="147.99999999999955" height="96.000000000000341"/>
+>>>>>>> Stashed changes
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.2925590804" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button">
@@ -29,6 +37,23 @@
                                     <segue destination="Ddh-aw-xlZ" kind="show" id="F8Q-YL-U0s"/>
                                 </connections>
                             </button>
+<<<<<<< Updated upstream
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories Burned" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmk-fn-CJc">
+                                <rect key="frame" x="13.4462302376769" y="186.99999999999966" width="343.00000000000045" height="33.999999999999929"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgT-Tn-dEs">
+                                <rect key="frame" x="16" y="253" width="343" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+>>>>>>> Stashed changes
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,6 +81,7 @@
             </objects>
             <point key="canvasLocation" x="3884" y="134"/>
         </scene>
+<<<<<<< Updated upstream
         <!--View Controller-->
         <scene sceneID="tAM-8V-APU">
             <objects>
@@ -72,6 +98,8 @@
             </objects>
             <point key="canvasLocation" x="3884" y="927"/>
         </scene>
+=======
+>>>>>>> Stashed changes
         <!--Tab Bar Controller-->
         <scene sceneID="qB8-Hi-zEL">
             <objects>
@@ -160,6 +188,7 @@
             </objects>
             <point key="canvasLocation" x="2964" y="926.60098522167493"/>
         </scene>
+<<<<<<< Updated upstream
         <!--Homepage-->
         <scene sceneID="qqv-AG-oP6">
             <objects>
@@ -253,6 +282,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ct2-ol-Y2Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Workouts" image="Workout" selectedImage="Workout" id="BUg-ao-a5M"/>
+=======
+        <!--NavToWorkouts-->
+        <scene sceneID="vyM-tM-h5p">
+            <objects>
+                <navigationController storyboardIdentifier="NavToWorkOuts" title="NavToWorkouts" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ct2-ol-Y2Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Workout" selectedImage="Workout" id="BUg-ao-a5M"/>
+>>>>>>> Stashed changes
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cA1-hf-bSu">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -268,11 +304,19 @@
             </objects>
             <point key="canvasLocation" x="2021.5999999999999" y="133.74384236453201"/>
         </scene>
+<<<<<<< Updated upstream
         <!--Meals-->
         <scene sceneID="TyS-Bq-uSt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sIS-e2-vYh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Meals" image="Meal" selectedImage="Meal" id="gio-Yi-pSU"/>
+=======
+        <!--NavToMain-->
+        <scene sceneID="TyS-Bq-uSt">
+            <objects>
+                <navigationController title="NavToMain" automaticallyAdjustsScrollViewInsets="NO" id="sIS-e2-vYh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Meal" selectedImage="Meal" id="gio-Yi-pSU"/>
+>>>>>>> Stashed changes
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sPr-G9-9yy">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -304,11 +348,19 @@
             </objects>
             <point key="canvasLocation" x="2964" y="1674"/>
         </scene>
+<<<<<<< Updated upstream
         <!--Profile-->
         <scene sceneID="6xh-3q-iln">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBa-eC-dOT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile" id="lr6-dB-Z9l"/>
+=======
+        <!--NavToProfile-->
+        <scene sceneID="6xh-3q-iln">
+            <objects>
+                <navigationController title="NavToProfile" automaticallyAdjustsScrollViewInsets="NO" id="gBa-eC-dOT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Profile" selectedImage="Profile" id="lr6-dB-Z9l"/>
+>>>>>>> Stashed changes
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E5G-8V-Jec">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -324,6 +376,7 @@
             </objects>
             <point key="canvasLocation" x="2020" y="1675"/>
         </scene>
+<<<<<<< Updated upstream
         <!--Login View Controller-->
         <scene sceneID="WLx-Gc-3vo">
             <objects>
@@ -342,11 +395,71 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="myFoodFindr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VC-f9-qQa">
                                 <rect key="frame" x="88" y="217" width="198" height="42"/>
+=======
+        <!--Login Controller Scene-->
+        <scene sceneID="sJm-Sn-uMx">
+            <objects>
+                <viewController title="Login Controller Scene" id="pq2-Qr-kQx" customClass="LoginViewController" customModule="FoodFindr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uB9-qT-aql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CVa-0W-BMO" customClass="GIDSignInButton">
+                                <rect key="frame" x="67.448198467734528" y="414" width="240" height="127.99999999999989"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AppThemeColor"/>
+                                <connections>
+                                    <action selector="googleBtnTapped:" destination="pq2-Qr-kQx" eventType="valueChanged" id="W5e-Wz-MUL"/>
+                                    <action selector="signInButton:" destination="pq2-Qr-kQx" eventType="valueChanged" id="VQv-zd-OCN"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="myFoodFindr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWu-kq-YW0">
+                                <rect key="frame" x="88" y="271" width="198" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iXH-jS-gIL"/>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="CVa-0W-BMO" id="pl9-Vx-Esd"/>
+                        <segue destination="2eO-rx-iYg" kind="show" identifier="SignInToFP" id="n26-gE-D9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBr-id-S3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="-638"/>
+        </scene>
+        <!--Enter User Data-->
+        <scene sceneID="oAW-Y4-R1b">
+            <objects>
+                <viewController title="Enter User Data" id="2eO-rx-iYg" customClass="UserGoalsViewController" customModule="FoodFindr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Xb-qY-UMx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Desired Weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LB9-zK-DPj">
+                                <rect key="frame" x="34" y="629" width="306" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="getDesiredWeightValue:" destination="2eO-rx-iYg" eventType="editingDidEnd" id="ZPK-En-DmE"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your desired weight? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR2-vt-q4C">
+                                <rect key="frame" x="31.973346819563631" y="493" width="305.99999999999955" height="28.000000000000227"/>
+>>>>>>> Stashed changes
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+<<<<<<< Updated upstream
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logged Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2K-De-9sY">
                                 <rect key="frame" x="142" y="640" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -354,6 +467,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+=======
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5BV-W0-zPE">
+                                <rect key="frame" x="33" y="529" width="308" height="83.000000000000114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Be careful when choosing a weight loss goal. A healthy BMI should be maintained and as always, consult your doctor before starting any new exercise or diet regimen</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your goal?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojy-fb-Jw9">
+                                <rect key="frame" x="91" y="266" width="193" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7lC-jF-AFC">
+                                <rect key="frame" x="0.0" y="339" width="375" height="146"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Let's get started!               We want to get to know you and your fitness goals." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDO-H3-shg">
+                                <rect key="frame" x="34" y="131.00000000000045" width="305.99999999999977" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="AppThemeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-fn-X1R">
+                                <rect key="frame" x="135.52761747782961" y="713" width="99.999999999999773" height="49.999999999999716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AppThemeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IWL-HW-Hop" kind="show" id="OQS-1y-dIS"/>
+                                </connections>
+                            </button>
+>>>>>>> Stashed changes
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Xv5-Qg-8eQ"/>
@@ -367,6 +521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIz-4n-epq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
             <point key="canvasLocation" x="750" y="-695"/>
         </scene>
         <!--Enter User Data View Controller-->
@@ -387,14 +542,123 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RiK-uw-i6P"/>
+=======
+            <point key="canvasLocation" x="2020" y="-638"/>
+        </scene>
+        <!--DietPrefRes-->
+        <scene sceneID="Ccp-cB-vjk">
+            <objects>
+                <viewController title="DietPrefRes" id="IWL-HW-Hop" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dy6-Kg-Ifc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2x-06-m4D">
+                                <rect key="frame" x="135.66666666666666" y="714" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AppThemeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bJS-it-vmA" kind="show" id="2KA-Qg-4V6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOQ-M7-rOg">
+                                <rect key="frame" x="8" y="426" width="359" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AppThemeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select Allergies"/>
+                                <connections>
+                                    <segue destination="wHb-FM-hbL" kind="show" id="l2k-hG-WvL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5x4-Gm-Cby">
+                                <rect key="frame" x="8" y="293" width="359" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AppThemeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select Diet Preferences"/>
+                                <connections>
+                                    <segue destination="lIv-80-TU2" kind="show" id="fno-jh-D5p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HGY-gQ-74z"/>
+>>>>>>> Stashed changes
                     </view>
                     <connections>
                         <outlet property="enterDataTitleLabel" destination="pW9-Od-rbd" id="wtT-M5-g7L"/>
                     </connections>
                 </viewController>
+<<<<<<< Updated upstream
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGE-Vg-7cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2022" y="-695"/>
+=======
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ysr-8j-Q9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2934" y="-638"/>
+        </scene>
+        <!--Diet Preference Table-->
+        <scene sceneID="NuP-pF-MTW">
+            <objects>
+                <tableViewController title="Diet Preference Table" id="lIv-80-TU2" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UfK-M1-czd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mcC-r3-POa">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mcC-r3-POa" id="etK-Zj-CpM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lIv-80-TU2" id="5Li-an-g75"/>
+                            <outlet property="delegate" destination="lIv-80-TU2" id="J8v-E3-xwN"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylz-lH-eVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3820" y="-1448"/>
+        </scene>
+        <!--Allergy Table-->
+        <scene sceneID="uDk-vA-6sq">
+            <objects>
+                <tableViewController title="Allergy Table" id="wHb-FM-hbL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dby-O8-DE8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bIU-QH-7WA">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bIU-QH-7WA" id="bSD-P3-0no">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wHb-FM-hbL" id="5EA-dq-EYL"/>
+                            <outlet property="delegate" destination="wHb-FM-hbL" id="VXV-cg-wpS"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PII-6E-ZyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3820" y="-638"/>
+>>>>>>> Stashed changes
         </scene>
     </scenes>
     <resources>

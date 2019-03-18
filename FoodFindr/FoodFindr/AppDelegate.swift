@@ -13,7 +13,12 @@ import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{
+<<<<<<< Updated upstream
     var window: UIWindow?
 
+=======
+    
+    var window: UIWindow?
+>>>>>>> Stashed changes
     
 }

@@ -4,6 +4,10 @@ CS 125 Project
 # Notes
 ```
 Yohana Notes:
+- login segues to prompt user to enter information
+- added more scenes and labeled scenes for better clarity
+- removed unnecessary files
+
 - added the use of Cocoapods, Firebase
 	- please look up instructions on installing Cocoapods so project can be seen
 	- Podfile is already made, do pod install
@@ -11,10 +15,6 @@ Yohana Notes:
 - use FoodFindr.xcworkspace to make edits, since Cocoapods is now being used
 
 Scenes Updated:
-Homepage (proposal of UI, awaiting confirmation)
-	the words on the scene are just place markers and should be replaced with the values
-	the meal plan suggestion should output breakfast, lunch, dinner, and snack recipes for the day
-
 Login
 	connected to google account
 	able to extract(lines 63-68 AppDelegate.swift)
@@ -24,10 +24,6 @@ Login
             let givenName = user.profile.givenName
             let familyName = user.profile.familyName
             let email = user.profile.email
-	
-Create Account --REMOVED 
-Enter User Data --maybe removed, using Healthkit insteadd
-Enter Diet Preferences (UI connected to swift code)
 
 To do:
 - Build relationships between scenes
