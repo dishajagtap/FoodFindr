@@ -13,19 +13,8 @@ class EnterUserDataViewController: UIViewController {
     }
     
     // MARK: Properties
-
-    @IBOutlet weak var enterYourInforTitle: UILabel!
-    @IBOutlet weak var curWeightTextField: UITextField!
-    @IBOutlet weak var curHeightTF: UITextField!
-    @IBOutlet weak var desWeightTF: UITextField!
-    @IBOutlet weak var fitnessGoalLabel: UILabel!
-    @IBOutlet weak var fitnessGoalChoicesPicker: UIPickerView! // need to change choices
     
-    
-    // MARK: Actions
-    @IBAction func moveToDietPrefButton(_ sender: Any) {
-    }
-    
+    @IBOutlet weak var enterDataTitleLabel: UILabel!
 }
 
  // MARK: Navigation

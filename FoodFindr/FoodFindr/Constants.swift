@@ -14,10 +14,4 @@ struct Constants {
         static let FpToSignIn = "FPToSignIn"
     }
     
-    struct MessageFields {
-        static let name = "name"
-        static let text = "text"
-        static let photoURL = "photoUrl"
-        static let imageURL = "imageUrl"
-    }
 }

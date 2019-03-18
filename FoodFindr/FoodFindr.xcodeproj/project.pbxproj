@@ -11,9 +11,7 @@
 		1E7E6DD02233CE7400F17B0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */; };
 		1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E85EA79223736B7007C1926 /* Main.storyboard */; };
 		1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */; };
-		1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */; };
 		1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */; };
-		1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */; };
 		1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */; };
 		1EB43EBD2232B444001AC258 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB43EBC2232B444001AC258 /* Constants.swift */; };
 		268FF6C4B95B9A2CADD6D3EF /* Pods_FoodFindr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD33F997531A00AFA4415FC9 /* Pods_FoodFindr.framework */; };
@@ -102,9 +100,7 @@
 		1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E85EA79223736B7007C1926 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserDataViewController.swift; sourceTree = "<group>"; };
-		1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPreferencesVC.swift; sourceTree = "<group>"; };
 		1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
 		1EB43EB92232AF73001AC258 /* FoodFindr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodFindr-Bridging-Header.h"; sourceTree = "<group>"; };
 		1EB43EBC2232B444001AC258 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -221,9 +217,7 @@
 				C4E97E7821F12B0B002A8800 /* FoodFindr.entitlements */,
 				C4E97E2E21F12AE6002A8800 /* Info.plist */,
 				C4E97E2221F12AE5002A8800 /* AppDelegate.swift */,
-				1E9FC47E222B960300E0F464 /* CreateAccountViewController.swift */,
 				1EB43EBC2232B444001AC258 /* Constants.swift */,
-				1E9FC482222B9BD300E0F464 /* DietPreferencesVC.swift */,
 				1E9FC480222B98AD00E0F464 /* EnterUserDataViewController.swift */,
 				1E9FC484222BA6BC00E0F464 /* HomepageVC.swift */,
 				1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */,
@@ -633,12 +627,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9FC481222B98AD00E0F464 /* EnterUserDataViewController.swift in Sources */,
-				1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */,
 				C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */,
 				A66908D9223A5E2F00BC04E8 /* RecipeCell.swift in Sources */,
 				C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */,
 				C4FDA36F21F2DD690085FAA0 /* ProfileViewController.swift in Sources */,
-				1E9FC483222B9BD300E0F464 /* DietPreferencesVC.swift in Sources */,
 				1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */,
 				1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */,
 				1E9FC485222BA6BC00E0F464 /* HomepageVC.swift in Sources */,
