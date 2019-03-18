@@ -15,13 +15,13 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var signOutButton: UIButton!
-    @IBOutlet weak var statusText: UILabel!
+    
     
     @IBOutlet weak var titleLogin: UILabel!
     // [START viewdidload]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(named: "AppThemeColor")
         GIDSignIn.sharedInstance().uiDelegate = self
         
         // Uncomment to automatically sign in the user.
@@ -32,8 +32,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
                                                selector: #selector(LoginViewController.receiveToggleAuthUINotification(_:)),
                                                name: NSNotification.Name(rawValue: "ToggleAuthUINotification"),
                                                object: nil)
-        
-        statusText.text = "Initialized Swift app..."
         toggleAuthUI()
         // [END_EXCLUDE]
     }
@@ -43,7 +41,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     @IBAction func didTapSignOut(_ sender: AnyObject) {
         GIDSignIn.sharedInstance().signOut()
         // [START_EXCLUDE silent]
-        statusText.text = "Signed out."
         toggleAuthUI()
         // [END_EXCLUDE]
     }
@@ -60,7 +57,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
             signInButton.isHidden = false
             signOutButton.isHidden = true
             // disconnectButton.isHidden = true
-            statusText.text = "Google Sign in\niOS Demo"
         }
     }
     // [END toggle_auth]
@@ -77,10 +73,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     @objc func receiveToggleAuthUINotification(_ notification: NSNotification) {
         if notification.name.rawValue == "ToggleAuthUINotification" {
             self.toggleAuthUI()
-            if notification.userInfo != nil {
-                guard let userInfo = notification.userInfo as? [String:String] else { return }
-                self.statusText.text = userInfo["statusText"]!
-            }
         }
     }
 }

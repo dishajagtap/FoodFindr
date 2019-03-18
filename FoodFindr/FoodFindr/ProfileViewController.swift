@@ -32,7 +32,9 @@ class ProfileViewController: UITableViewController {
     @IBOutlet weak var biologicalSexValue: UILabel!
     @IBOutlet weak var weightValue: UILabel!
     @IBOutlet weak var heightValue: UILabel!
-    private let userHealthProfile = UserHealthProfile()
+    @IBOutlet weak var bmiValue: UILabel!
+    @IBOutlet weak var fitnessGoalValue: UILabel!
+    @IBOutlet weak var desiredWeightValue: UILabel!
     
     private func updateHealthInfo() {
         loadAndDisplayAgeAndSex()
@@ -43,8 +45,8 @@ class ProfileViewController: UITableViewController {
     private func loadAndDisplayAgeAndSex() {
         do {
             let userAgeAndSex = try ProfileDataStore.getAgeAndSex()
-            userHealthProfile.age = userAgeAndSex.age
-            userHealthProfile.biologicalSex = userAgeAndSex.biologicalSex
+            UserHealthProfile.age = userAgeAndSex.age
+            UserHealthProfile.biologicalSex = userAgeAndSex.biologicalSex
             updateLabels()
         } catch {
             
@@ -63,7 +65,7 @@ class ProfileViewController: UITableViewController {
             }
             
             let weight = sample.quantity.doubleValue(for: HKUnit.pound())
-            self.userHealthProfile.currentWeight = weight
+            UserHealthProfile.currentWeight = weight
             self.updateLabels()
         }
     }
@@ -82,28 +84,40 @@ class ProfileViewController: UITableViewController {
             //2. Convert the height sample to meters, save to the profile model,
             //   and update the user interface.
             let height = sample.quantity.doubleValue(for: HKUnit.inch())
-            self.userHealthProfile.height = height
+            UserHealthProfile.height = height
             self.updateLabels()
         }
     }
     
+    
     private func updateLabels() {
-        if let age = userHealthProfile.age {
+        if let age = UserHealthProfile.age {
             ageValue.text = "\(age)"
         }
         
-        if let biologicalSex = userHealthProfile.biologicalSex {
+        if let biologicalSex = UserHealthProfile.biologicalSex {
             biologicalSexValue.text = "\(getSexEnumValue(biologicalSex: biologicalSex))"
         }
         
-        if let weight = userHealthProfile.currentWeight {
+        if let weight = UserHealthProfile.currentWeight {
             weightValue.text = "\(weight) pounds"
         }
         
-        if let height = userHealthProfile.height {
+        if let height = UserHealthProfile.height {
             heightValue.text = "\(height) inches"
         }
         
+        if let bmi = UserHealthProfile.bodyMassIndex {
+            bmiValue.text = "\(bmi)"
+        }
+        
+        if let fg = UserHealthProfile.fitnessGoal {
+            fitnessGoalValue.text = "\(fg)"
+        }
+        
+        if let dw = UserHealthProfile.desiredWeight {
+            desiredWeightValue.text = "\(dw)"
+        }
     }
     
     private func getSexEnumValue(biologicalSex: HKBiologicalSex) -> (String) {
@@ -125,7 +139,7 @@ class ProfileViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 4
     }
 
     /*

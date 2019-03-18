@@ -13,20 +13,21 @@ class UserHealthProfile {
     static let modActiveMultiplier = 15
     static let activeMultiplier = 18
     
-    var age: Int?
-    var biologicalSex: HKBiologicalSex?
-    var height: Double?
-    var currentWeight: Double?
-    var desiredWeight: Double?
-    var activeLifestyle: Int?
-    var weightGoal: Int?
-    var bodyMassIndex: Double? {
-        guard let currentWeight = currentWeight,
-            let height = height,
+    static var age: Int?
+    static var biologicalSex: HKBiologicalSex?
+    static var height: Double?
+    static var currentWeight: Double?
+    static var desiredWeight: Double?
+    static var activeLifestyle: Int?
+    static var fitnessGoal: String?
+    static var bodyMassIndex: Double? {
+        guard let currentWeight = UserHealthProfile.currentWeight,
+            let height = UserHealthProfile.height,
             height > 0 else {
                 return nil
         }
-        return (currentWeight/(height*height))
+        let x = 703*currentWeight/(height*height)
+        return Double(floor(x))
     }
 
 }
