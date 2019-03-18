@@ -11,6 +11,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+<<<<<<< HEAD
 class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate{
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
@@ -27,6 +28,15 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
             print("\(error.localizedDescription)")
         }
     }
+=======
+// [START viewcontroller_interfaces]
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
+    // [END viewcontroller_interfaces]
+    
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    @IBOutlet weak var signOutButton: UIButton!
+    
+>>>>>>> fc42a4b358d6848ef973569fa98e87024a6ec0e7
     
     var handle: AuthStateDidChangeListenerHandle?
 <<<<<<< Updated upstream
@@ -47,6 +57,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
  */
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
 =======
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,8 +84,33 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
         -> Bool {
             return self.application(application, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: "")
+=======
+        self.view.backgroundColor = UIColor(named: "AppThemeColor")
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        // Uncomment to automatically sign in the user.
+        //GIDSignIn.sharedInstance().signInSilently()
+        // TODO(developer) Configure the sign-in button look/feel
+        // [START_EXCLUDE]
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(LoginViewController.receiveToggleAuthUINotification(_:)),
+                                               name: NSNotification.Name(rawValue: "ToggleAuthUINotification"),
+                                               object: nil)
+        toggleAuthUI()
+        // [END_EXCLUDE]
+    }
+    // [END viewdidload]
+    
+    // [START signout_tapped]
+    @IBAction func didTapSignOut(_ sender: AnyObject) {
+        GIDSignIn.sharedInstance().signOut()
+        // [START_EXCLUDE silent]
+        toggleAuthUI()
+        // [END_EXCLUDE]
+>>>>>>> fc42a4b358d6848ef973569fa98e87024a6ec0e7
     }
     
+<<<<<<< HEAD
     func application(_ application: UIApplication,
                      open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
@@ -102,6 +138,19 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
                     self.performSegue(withIdentifier: Constants.Segues.SignInToFp, sender: nil)
                 }
             })
+=======
+    // [START toggle_auth]
+    func toggleAuthUI() {
+        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            // Signed in
+            signInButton.isHidden = true
+            signOutButton.isHidden = false
+            // disconnectButton.isHidden = false
+        } else {
+            signInButton.isHidden = false
+            signOutButton.isHidden = true
+            // disconnectButton.isHidden = true
+>>>>>>> fc42a4b358d6848ef973569fa98e87024a6ec0e7
         }
     }
     */
@@ -139,11 +188,19 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
 =======
 =======
     }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBAction func googleBtnTapped(_ sender: GIDSignInButton) {
         GIDSignIn.sharedInstance().signIn()
         
+=======
+    
+    @objc func receiveToggleAuthUINotification(_ notification: NSNotification) {
+        if notification.name.rawValue == "ToggleAuthUINotification" {
+            self.toggleAuthUI()
+        }
+>>>>>>> fc42a4b358d6848ef973569fa98e87024a6ec0e7
     }
     
 }

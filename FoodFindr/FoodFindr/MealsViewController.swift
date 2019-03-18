@@ -25,31 +25,48 @@ class Recipe {
 
 class MealsViewController: UIViewController {
     @IBOutlet weak var recipeTableView: UITableView!
-    
+    var filters: [String] = [
+        "Protein",
+        "Vegetarian",
+        "Vegan",
+        "Paleo",
+        "Dairy-free",
+        "Gluten-free",
+        "Wheat-free",
+        "Fat-free",
+        "Low-sugar",
+        "Egg-free",
+        "Peanut-free",
+        "Tree-Nut-free",
+        "Soy-free",
+        "Fish-free",
+        "Shellfish-free"
+    ]
     var recipes: [Recipe] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Path loading...")
+        self.navigationItem.title = "Meals"
+
         // Do any additional setup after loading the view.
-        guard let path = Bundle.main.path(forResource: "recipe_out_example", ofType: "json") else {
-            print("Failed")
-            return
-            
-        }
-        let url = URL(fileURLWithPath: path)
-        do {
-            let data = try Data(contentsOf: url)
-            let json = JSON(data)
+        print("Getting recipes...")
+        let apiCaller = RecipeAPICaller()
+        apiCaller.getExampleRecipe().responseJSON{ response in
+            let json = JSON(response.result.value)
             let hits = json["hits"]
             for h in hits {
-                recipes.append(Recipe(hitJson: h.1))
+                self.recipes.append(Recipe(hitJson: h.1))
             }
+            self.recipeTableView.reloadData()
+            print(self.recipes)
         }
-        catch {
-            print(error)
-        }
-        
+
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barStyle = .black
+    }
+
+
     /*
     // MARK: - Navigation
 
@@ -62,7 +79,7 @@ class MealsViewController: UIViewController {
 
 }
 extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
@@ -72,4 +89,20 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setCell(recipe: recipe)
         return cell
     }
+}
+
+extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.filters.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionViewCell", for: indexPath) as! FilterCollectionViewCell
+        cell.setText(text: filters[indexPath.row])
+        return cell
+    }
+
+
+
 }

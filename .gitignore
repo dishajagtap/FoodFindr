@@ -8,7 +8,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
-xcuserdata/
+**/xcuserdata/*
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
@@ -34,7 +34,6 @@ DerivedData/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
-
 # Yohana gitignore
 FoodFindr/Pods/
 Backend/node_modules
@@ -42,6 +41,7 @@ Backend/package-lock.json
 Podfile.lock
 .DS_Store
 *.DS_Store
+FoodFindr/.DS_Store
 
 
 # End of https://www.gitignore.io/api/xcode
