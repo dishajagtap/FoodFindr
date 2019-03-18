@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E26C59E223287FE00897287 /* MeasurementHelper.swift */; };
+		1E2A774C223F7F6D001AA426 /* DietOptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A774B223F7F6D001AA426 /* DietOptViewController.swift */; };
 		1E7E6DD02233CE7400F17B0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */; };
 		1E85EA7A223736B8007C1926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E85EA79223736B7007C1926 /* Main.storyboard */; };
 		1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */; };
@@ -104,6 +105,7 @@
 		05F385BFAD83C8998F9BB192 /* Pods_FoodFindrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodFindrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FDDC60A98FD8B6C5A657EA /* Pods-FoodFindrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindrUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodFindrUITests/Pods-FoodFindrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E26C59E223287FE00897287 /* MeasurementHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
+		1E2A774B223F7F6D001AA426 /* DietOptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietOptViewController.swift; sourceTree = "<group>"; };
 		1E7E6DCF2233CE7300F17B0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E85EA79223736B7007C1926 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E9FC47C222B6A5900E0F464 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				1E26C59E223287FE00897287 /* MeasurementHelper.swift */,
 				C4FDA36C21F2DD410085FAA0 /* MealsViewController.swift */,
 				C48A6C8F2237A46900A8AEB0 /* ProfileViewController.swift */,
+				1E2A774B223F7F6D001AA426 /* DietOptViewController.swift */,
 				C4E97E2421F12AE5002A8800 /* WorkoutsViewController.swift */,
 				C4E97E2921F12AE6002A8800 /* Assets.xcassets */,
 				C4E97E2B21F12AE6002A8800 /* LaunchScreen.storyboard */,
@@ -669,6 +672,7 @@
 				C48A6C96223CDE5C00A8AEB0 /* ActiveEnergyBurnedProfile.swift in Sources */,
 				C4D886C9223DE52C00625387 /* UserGoalsViewController.swift in Sources */,
 				A6CC62D1223D15DD00404691 /* FilterCollectionViewCell.swift in Sources */,
+				1E2A774C223F7F6D001AA426 /* DietOptViewController.swift in Sources */,
 				1E9FC47F222B960300E0F464 /* CreateAccountViewController.swift in Sources */,
 				A6CC62D5223D167100404691 /* RecipeAPICaller.swift in Sources */,
 				C48A6C94223B4FB600A8AEB0 /* ActiveEnergyBurnedDataStore.swift in Sources */,

@@ -49,7 +49,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
     }
     @IBOutlet weak var appTitleLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBAction func googleBtnTapped(_ sender: GIDSignInButton) {
         GIDSignIn.sharedInstance().signIn()
@@ -57,3 +56,4 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     }
     
 
+}
