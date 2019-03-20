@@ -32,6 +32,7 @@ class ProfileViewController: UITableViewController {
     @IBOutlet weak var weightValue: UILabel!
     @IBOutlet weak var heightValue: UILabel!
     @IBOutlet weak var bmiValue: UILabel!
+    @IBOutlet weak var bmrValue: UILabel!
     @IBOutlet weak var fitnessGoalValue: UILabel!
     @IBOutlet weak var desiredWeightValue: UILabel!
     @IBOutlet weak var dietPreferencesValue: UILabel!
@@ -129,6 +130,9 @@ class ProfileViewController: UITableViewController {
             dietPreferencesValue.text = "\(UserHealthProfile.dietPreferences[0])"
         }
         
+        if let bmr = UserHealthProfile.basalMetabolicRate {
+            bmrValue.text = "\(bmr)"
+        }
     }
     
     private func getSexEnumValue(biologicalSex: HKBiologicalSex) -> (String) {
