@@ -90,6 +90,7 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setCell(recipe: recipe)
         return cell
     }
+
 }
 
 

@@ -10,7 +10,7 @@ import UIKit
 import HealthKit
 
 class WorkoutsViewController: UIViewController {
-    
+    //     var currentCaloriesAfterSelectingFood:Double = MealsViewController().currentCalories
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -85,14 +85,10 @@ class WorkoutsViewController: UIViewController {
 
     @IBOutlet public weak var caloriesBurnedLabel: UILabel!
     @IBOutlet public weak var caloriesBurnedValue: UILabel!
-<<<<<<< HEAD
     let activeEnergy = ActiveEnergyBurnedDataStore.getActiveEnergyBurned()
-=======
     @IBOutlet weak var dateMonth: UILabel!
     @IBOutlet weak var dateDay: UILabel!
     @IBOutlet weak var dateDOTW: UILabel!
     @IBOutlet weak var profilePicture: UIImageView!
-    
     @IBOutlet weak var BMRValue: UILabel!
->>>>>>> 5bc54c06b2d394016eb6a37724c67345b5ece211
 }
