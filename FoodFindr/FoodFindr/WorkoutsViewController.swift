@@ -22,11 +22,13 @@ class WorkoutsViewController: UIViewController {
         healthKitSetup()
         fetchAndUpdateAEB()
         setUpBackgroundDeliveryForAEB()
-        BMRValue.text = "\(UserHealthProfile.basalMetabolicRate)"
     }
 
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.barStyle = .black
+        fetchAndUpdateAEB()
+        updateRemainingCalories()
+        
     }
     
     func setUpUI() {
@@ -49,7 +51,6 @@ class WorkoutsViewController: UIViewController {
         } else {
             profilePicture.image = UIImage(named: "Profile Male")
         }
-        
     }
 
     func healthKitSetup() {
@@ -81,6 +82,25 @@ class WorkoutsViewController: UIViewController {
             debugPrint("enableBackgroundDeliveryForType handler called for \(sampleType) - success: \(complete)")
         }
     }
+    
+    func remainingCalories() -> (Double){
+        let bmr = UserHealthProfile.basalMetabolicRate
+        switch UserHealthProfile.fitnessGoal{
+        case "Maintain Weight":
+            return bmr ?? 0.0
+        case "Lose Weight":
+            return bmr ?? 0.0 - 500
+        case "Gain Weight":
+            return bmr ?? 0.0 + 500
+        default:
+            return bmr ?? 0.0
+            
+        }
+    }
+    
+    func updateRemainingCalories() {
+        remainingCaloriesValue.text = "\(self.remainingCalories() + ActiveEnergyBurnedDataStore.getActiveEnergyBurned()) kCal"
+    }
 
     @IBOutlet public weak var caloriesBurnedLabel: UILabel!
     @IBOutlet public weak var caloriesBurnedValue: UILabel!
@@ -89,5 +109,6 @@ class WorkoutsViewController: UIViewController {
     @IBOutlet weak var dateDOTW: UILabel!
     @IBOutlet weak var profilePicture: UIImageView!
     
+    @IBOutlet weak var remainingCaloriesValue: UILabel!
     @IBOutlet weak var BMRValue: UILabel!
 }

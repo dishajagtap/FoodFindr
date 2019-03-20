@@ -22,14 +22,14 @@ class UserHealthProfile {
     static var desiredWeight: Double?
     static var activeLifestyle: String?
     static var fitnessGoal: String? = "Maintain Weight"
-    static var bodyMassIndex: Double? {
+    static var bodyMassIndex: Int? {
         guard let currentWeight = UserHealthProfile.currentWeight,
             let height = UserHealthProfile.height,
             height > 0 else {
                 return nil
         }
         let x = 703*currentWeight/(height*height)
-        return Double(floor(x))
+        return Int(floor(x))
     }
     static var basalMetabolicRate: Double? {
         guard let currentWeight = UserHealthProfile.currentWeight,
@@ -47,7 +47,7 @@ class UserHealthProfile {
             let v2 = (4.799 * height*inchesToCmMultiplier)
             bmr = 88.362 + v1 + v2 - (5.677 * Double(age))
         }
-        return bmr
+        return Double(floor(bmr))
     }
     static var dietPreferences: [String] = []
 }

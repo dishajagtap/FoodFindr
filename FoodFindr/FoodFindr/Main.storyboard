@@ -61,7 +61,7 @@
                                 <color key="textColor" red="1" green="0.2925590804" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2500 kcal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7E-VC-178">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7E-VC-178">
                                 <rect key="frame" x="16" y="421" width="150" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -72,13 +72,6 @@
                                 <rect key="frame" x="259" y="129" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORE-vQ-Cd6">
-                                <rect key="frame" x="61" y="583" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,13 +79,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="fI8-ym-7al"/>
                     <connections>
-                        <outlet property="BMRValue" destination="ORE-vQ-Cd6" id="bSe-Zy-ZnW"/>
                         <outlet property="caloriesBurnedLabel" destination="Vmk-fn-CJc" id="gCK-ch-Of9"/>
                         <outlet property="caloriesBurnedValue" destination="DgT-Tn-dEs" id="cyu-YW-xiq"/>
                         <outlet property="dateDOTW" destination="TT6-LL-yzs" id="W9Y-o0-txD"/>
                         <outlet property="dateDay" destination="vwf-XF-DBE" id="Pxd-Z4-vfj"/>
                         <outlet property="dateMonth" destination="YBR-RH-waj" id="Y7I-h7-o5R"/>
                         <outlet property="profilePicture" destination="rhK-fe-4Vk" id="aiF-am-Dlf"/>
+                        <outlet property="remainingCaloriesValue" destination="k7E-VC-178" id="2iA-5t-Oj8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -400,12 +393,36 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="gYm-hg-s1O" detailTextLabel="6iQ-po-jvt" style="IBUITableViewCellStyleValue1" id="kek-km-2yh">
+                                        <rect key="frame" x="0.0" y="323.33333333333337" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kek-km-2yh" id="wzK-Jp-uxA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Basal Metabolic Rate (BMR)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gYm-hg-s1O">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="201.33333333333334" height="19.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Unknown" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6iQ-po-jvt">
+                                                    <rect key="frame" x="291" y="12.999999999999998" width="68" height="19.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Goals" id="J2Y-29-Zi4">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="jDM-mj-TBa" detailTextLabel="rs4-5h-o8f" style="IBUITableViewCellStyleValue1" id="nbI-rt-3IS">
-                                        <rect key="frame" x="0.0" y="371.33333333333337" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="415.33333333333337" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbI-rt-3IS" id="uKP-a1-YNK">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
@@ -429,7 +446,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="iT6-Th-Yji" detailTextLabel="1tg-2I-l5W" style="IBUITableViewCellStyleValue1" id="j9W-de-aAo">
-                                        <rect key="frame" x="0.0" y="415.33333333333337" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="459.33333333333337" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j9W-de-aAo" id="1ZQ-Yg-av7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
@@ -457,7 +474,7 @@
                             <tableViewSection headerTitle="Diet" id="Wdh-Ys-bO5">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="sWd-4X-98n" detailTextLabel="bA8-vn-x70" style="IBUITableViewCellStyleValue1" id="x3u-Ma-7aX">
-                                        <rect key="frame" x="0.0" y="507.33333333333337" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="551.33333333333337" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x3u-Ma-7aX" id="qlY-hB-obV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
@@ -493,6 +510,7 @@
                         <outlet property="ageValue" destination="8sQ-fF-Xrf" id="2EY-ai-qnK"/>
                         <outlet property="biologicalSexValue" destination="U3U-P8-qOe" id="ho6-TL-P97"/>
                         <outlet property="bmiValue" destination="6LW-GK-lXq" id="OHn-5m-IZj"/>
+                        <outlet property="bmrValue" destination="6iQ-po-jvt" id="EyB-qF-qpj"/>
                         <outlet property="desiredWeightValue" destination="1tg-2I-l5W" id="m0m-KN-wjm"/>
                         <outlet property="dietPreferencesValue" destination="bA8-vn-x70" id="xmJ-GV-aaU"/>
                         <outlet property="fitnessGoalValue" destination="rs4-5h-o8f" id="2Xl-yn-eX0"/>
