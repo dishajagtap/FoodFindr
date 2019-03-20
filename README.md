@@ -39,7 +39,17 @@ To do:
 - Apple Watch application may need to be eliminated due to deadline limitations
 
 ```
-
+Applicable filters:
+Diet balanced
+Diet high-protein
+Diet low-fat
+Diet low-carb
+Health vegan
+Health vegetarian
+Health sugar-conscience
+Health peanut-free
+Health tree-nut-free
+Health alcohol-free
 ```
 User:
 	Login/Password
@@ -71,6 +81,9 @@ curl "https://api.edamam.com/search?app_id=ff7726ea&app_key=f563fb2c7043c921bd01
 
 App ID: ff7726ea
 App key: f563fb2c7043c921bd01d0eeb0312ebd
+
+449267b6
+dc3d3484b6a0dad040d224e307b60447
 
 API Header Link:
 https://api.edamam.com/search?app_id=ff7726ea&app_key=f563fb2c7043c921bd01d0eeb0312ebd
