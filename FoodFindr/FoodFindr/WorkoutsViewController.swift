@@ -17,14 +17,39 @@ class WorkoutsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        self.navigationItem.title = "Workouts"
+        self.navigationItem.title = "Home"
+        setUpUI()
         healthKitSetup()
         fetchAndUpdateAEB()
         setUpBackgroundDeliveryForAEB()
+        BMRValue.text = "\(UserHealthProfile.basalMetabolicRate)"
     }
 
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.barStyle = .black
+    }
+    
+    func setUpUI() {
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "LLLL"
+        let nameOfMonth = dateFormatter.string(from: date)
+        
+        dateFormatter.dateFormat = "EEEE"
+        let dayOfWeek = dateFormatter.string(from:date)
+        
+        dateMonth.text = "\(nameOfMonth)"
+        dateDay.text = "\(calendar.component(.day, from: date))"
+        dateDOTW.text = "\(dayOfWeek)"
+        
+        if UserHealthProfile.biologicalSex?.rawValue == 1 {
+            profilePicture.image = UIImage(named: "Profile Female")
+        } else {
+            profilePicture.image = UIImage(named: "Profile Male")
+        }
+        
     }
 
     func healthKitSetup() {
@@ -59,4 +84,10 @@ class WorkoutsViewController: UIViewController {
 
     @IBOutlet public weak var caloriesBurnedLabel: UILabel!
     @IBOutlet public weak var caloriesBurnedValue: UILabel!
+    @IBOutlet weak var dateMonth: UILabel!
+    @IBOutlet weak var dateDay: UILabel!
+    @IBOutlet weak var dateDOTW: UILabel!
+    @IBOutlet weak var profilePicture: UIImageView!
+    
+    @IBOutlet weak var BMRValue: UILabel!
 }

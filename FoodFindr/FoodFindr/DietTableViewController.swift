@@ -8,11 +8,27 @@
 
 import UIKit
 
-class DietRestrictionsTableViewController: UITableViewController {
-
+class DietTableViewController: UITableViewController {
+    
+    let dietPreferencesOptions = [
+        "Balanced",
+        "High-Protein",
+        "Low-Fat",
+        "Low-Carb",
+        "Vegan",
+        "Vegetarian",
+        "Sugar-Conscience",
+        "Peanut-Free",
+        "TreeNuts-Free",
+        "Alcohol-Free"]
+    
+    
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.tableFooterView = UIView(frame: .zero)
+        self.navigationItem.title = "Dietary Preferences"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -21,7 +37,6 @@ class DietRestrictionsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -29,7 +44,28 @@ class DietRestrictionsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 17
+        return 10
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dietCell", for: indexPath) as! DietCell
+        let showCheckmarkBox = UserHealthProfile.dietPreferences.contains(dietPreferencesOptions[indexPath.row])
+        cell.setCell(dietLabel: dietPreferencesOptions[indexPath.row], showCheckmarkBox: showCheckmarkBox)
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! DietCell
+        cell.showCheckmarkBox()
+        UserHealthProfile.dietPreferences.append(cell.dietLabel.text ?? "")
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! DietCell
+        cell.hideCheckmarkBox()
+        if let index = UserHealthProfile.dietPreferences.index(of: cell.dietLabel.text ?? "") {
+             UserHealthProfile.dietPreferences.remove(at: index)
+        }
     }
 
     /*
