@@ -39,7 +39,17 @@ To do:
 - Apple Watch application may need to be eliminated due to deadline limitations
 
 ```
-
+Applicable filters:
+Diet balanced
+Diet high-protein
+Diet low-fat
+Diet low-carb
+Health vegan
+Health vegetarian
+Health sugar-conscience
+Health peanut-free
+Health tree-nut-free
+Health alcohol-free
 ```
 User:
 	Login/Password
