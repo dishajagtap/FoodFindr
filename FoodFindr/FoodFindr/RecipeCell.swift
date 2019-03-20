@@ -13,7 +13,9 @@ class RecipeCell: UITableViewCell {
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeLabel: UILabel!
     @IBOutlet weak var calorieLabel: UILabel!
+    weak var recipeVal: Recipe!
     func setCell(recipe: Recipe) {
+        recipeVal = recipe
         recipeLabel.text = recipe.label
         calorieLabel.text = "\(recipe.calories) cal"
         do {

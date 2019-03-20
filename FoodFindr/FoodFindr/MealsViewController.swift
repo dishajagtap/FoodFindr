@@ -14,34 +14,32 @@ class Recipe {
     var label: String
     var imageUrl: String
     var calories: Int
+    var url: String
     init(hitJson: JSON) {
         let recipe = hitJson["recipe"]
         self.uri = recipe["uri"].string!
         self.label = recipe["label"].string!
         self.imageUrl = recipe["image"].string!
         self.calories = recipe["calories"].int!
+        self.url = recipe["url"].string!
     }
 }
 
 class MealsViewController: UIViewController {
     @IBOutlet weak var recipeTableView: UITableView!
+    let apiCaller = RecipeAPICaller()
     var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
-    var filters: [String] = [
-        "Protein",
-        "Vegetarian",
-        "Vegan",
-        "Paleo",
-        "Dairy-free",
-        "Gluten-free",
-        "Wheat-free",
-        "Fat-free",
-        "Low-sugar",
-        "Egg-free",
-        "Peanut-free",
-        "Tree-Nut-free",
-        "Soy-free",
-        "Fish-free",
-        "Shellfish-free"
+    var filters: [(String, String)] = [
+        ("Balanced", RecipeAPICaller.balanced),
+        ("High-protein", RecipeAPICaller.high_protein),
+        ("Low-fat", RecipeAPICaller.low_fat),
+        ("Low-carb", RecipeAPICaller.low_carb),
+        ("Vegan", RecipeAPICaller.vegan),
+        ("Vegetarian", RecipeAPICaller.vegetarian),
+        ("Sugar-conscience", RecipeAPICaller.sugar_conscience),
+        ("Peanut-free", RecipeAPICaller.peanut_free),
+        ("Tree-free", RecipeAPICaller.tree_free),
+        ("Alcohol-free", RecipeAPICaller.alcohol_free)
     ]
     var recipes: [Recipe] = []
     override func viewDidLoad() {
@@ -51,7 +49,6 @@ class MealsViewController: UIViewController {
         activityIndicator.style = UIActivityIndicatorView.Style.gray
         view.addSubview(activityIndicator)
         
-        activityIndicator.startAnimating()
 
         self.recipeTableView.separatorStyle = .none
 
@@ -59,8 +56,8 @@ class MealsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         print("Getting recipes...")
-        let apiCaller = RecipeAPICaller()
-        apiCaller.getExampleRecipe().responseJSON{ response in
+        apiCaller.getRecipes().responseJSON{ response in
+            self.activityIndicator.startAnimating()
             let json = JSON(response.result.value)
             let hits = json["hits"]
             for h in hits {
@@ -69,8 +66,6 @@ class MealsViewController: UIViewController {
             self.recipeTableView.reloadData()
             self.activityIndicator.stopAnimating()
         }
-        
-//        activityIndicator.stopAnimating()
 
     }
 
@@ -101,6 +96,12 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setCell(recipe: recipe)
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeCell
+        if let url = URL(string: cell.recipeVal.url) {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 
 extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -111,10 +112,7 @@ extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionViewCell", for: indexPath) as! FilterCollectionViewCell
-        cell.setText(text: filters[indexPath.row])
+        cell.setButton(filterTup: filters[indexPath.row], apiCaller: self.apiCaller, table: self.recipeTableView, meal: self)
         return cell
     }
-
-
-
 }
