@@ -26,7 +26,7 @@ class FilterCollectionViewCell: UICollectionViewCell {
     }
     @objc func buttonAction(sender: UIButton!) {
         if sender.backgroundColor == UIColor.white {
-            sender.backgroundColor = UIColor.red
+            sender.backgroundColor = UIColor.orange
             apiCallerVal.addFilter(filter: filterVal)
         } else {
             sender.backgroundColor = UIColor.white
