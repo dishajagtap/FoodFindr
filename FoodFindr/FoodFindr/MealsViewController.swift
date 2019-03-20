@@ -25,6 +25,7 @@ class Recipe {
 
 class MealsViewController: UIViewController {
     @IBOutlet weak var recipeTableView: UITableView!
+    var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     var filters: [String] = [
         "Protein",
         "Vegetarian",
@@ -45,6 +46,15 @@ class MealsViewController: UIViewController {
     var recipes: [Recipe] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        view.addSubview(activityIndicator)
+        
+        activityIndicator.startAnimating()
+
+        self.recipeTableView.separatorStyle = .none
+
         self.navigationItem.title = "Meals"
 
         // Do any additional setup after loading the view.
@@ -57,8 +67,10 @@ class MealsViewController: UIViewController {
                 self.recipes.append(Recipe(hitJson: h.1))
             }
             self.recipeTableView.reloadData()
-            print(self.recipes)
+            self.activityIndicator.stopAnimating()
         }
+        
+//        activityIndicator.stopAnimating()
 
     }
 
