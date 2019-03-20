@@ -24,6 +24,7 @@ class Recipe {
 }
 
 class MealsViewController: UIViewController {
+    var currentCalories:Double = 0.0
     @IBOutlet weak var recipeTableView: UITableView!
     var filters: [String] = [
         "Protein",
@@ -66,7 +67,8 @@ class MealsViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
     }
 
-
+    @IBOutlet weak var foodCalories: UILabel!
+    
     /*
     // MARK: - Navigation
 
@@ -79,7 +81,6 @@ class MealsViewController: UIViewController {
 
 }
 extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
@@ -91,18 +92,15 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
+
+extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.filters.count
     }
-
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionViewCell", for: indexPath) as! FilterCollectionViewCell
         cell.setText(text: filters[indexPath.row])
         return cell
     }
-
-
-
 }

@@ -10,6 +10,7 @@ import UIKit
 import HealthKit
 
 class WorkoutsViewController: UIViewController {
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -59,4 +60,5 @@ class WorkoutsViewController: UIViewController {
 
     @IBOutlet public weak var caloriesBurnedLabel: UILabel!
     @IBOutlet public weak var caloriesBurnedValue: UILabel!
+    let activeEnergy = ActiveEnergyBurnedDataStore.getActiveEnergyBurned()
 }
