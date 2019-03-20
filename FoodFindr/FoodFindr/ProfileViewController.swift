@@ -27,7 +27,6 @@ class ProfileViewController: UITableViewController {
         navigationController?.navigationBar.barStyle = .black
     }
     
-    
     @IBOutlet weak var ageValue: UILabel!
     @IBOutlet weak var biologicalSexValue: UILabel!
     @IBOutlet weak var weightValue: UILabel!
@@ -35,6 +34,7 @@ class ProfileViewController: UITableViewController {
     @IBOutlet weak var bmiValue: UILabel!
     @IBOutlet weak var fitnessGoalValue: UILabel!
     @IBOutlet weak var desiredWeightValue: UILabel!
+    @IBOutlet weak var dietPreferencesValue: UILabel!
     
     private func updateHealthInfo() {
         loadAndDisplayAgeAndSex()
@@ -115,9 +115,20 @@ class ProfileViewController: UITableViewController {
             fitnessGoalValue.text = "\(fg)"
         }
         
-        if let dw = UserHealthProfile.desiredWeight {
-            desiredWeightValue.text = "\(dw)"
+        if UserHealthProfile.fitnessGoal == "Maintain Weight" {
+            if let weight = UserHealthProfile.currentWeight {
+                desiredWeightValue.text = "\(weight)"
+            }
+        } else {
+            if let dw = UserHealthProfile.desiredWeight {
+                desiredWeightValue.text = "\(dw)"
+            }
         }
+        
+        if !UserHealthProfile.dietPreferences.isEmpty {
+            dietPreferencesValue.text = "\(UserHealthProfile.dietPreferences[0])"
+        }
+        
     }
     
     private func getSexEnumValue(biologicalSex: HKBiologicalSex) -> (String) {

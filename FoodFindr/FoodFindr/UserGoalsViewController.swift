@@ -43,6 +43,8 @@ class UserGoalsViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     {
         fitnessGoalSelectedValue = fitnessGoalPickerData[row]
         UserHealthProfile.fitnessGoal = fitnessGoalSelectedValue
+        debugPrint(fitnessGoalSelectedValue)
+        debugPrint(UserHealthProfile.fitnessGoal)
         showDesiredWeightInputSection()
     }
     

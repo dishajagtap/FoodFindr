@@ -21,6 +21,8 @@
 		A6CC62D5223D167100404691 /* RecipeAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62D3223D167100404691 /* RecipeAPICaller.swift */; };
 		A6CC62D6223D167100404691 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC62D4223D167100404691 /* RecipeCell.swift */; };
 		C4071386223CF76B0090F763 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071384223CEFDA0090F763 /* HealthKitSetupAssistant.swift */; };
+		C424A70F2241BEC90054527D /* DietTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424A70E2241BEC90054527D /* DietTableViewController.swift */; };
+		C424A7132241DCC80054527D /* DietCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424A7122241DCC80054527D /* DietCell.swift */; };
 		C46CC762223754D70074073C /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CC761223754D70074073C /* UserHealthProfile.swift */; };
 		C48A6C8E223760D200A8AEB0 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C8D223760D200A8AEB0 /* ProfileDataStore.swift */; };
 		C48A6C902237A46900A8AEB0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C8F2237A46900A8AEB0 /* ProfileViewController.swift */; };
@@ -120,6 +122,8 @@
 		A6CC62D4223D167100404691 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		AE04530F2F59959F55109697 /* Pods-FoodFindr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFindr.release.xcconfig"; path = "Target Support Files/Pods-FoodFindr/Pods-FoodFindr.release.xcconfig"; sourceTree = "<group>"; };
 		C4071384223CEFDA0090F763 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		C424A70E2241BEC90054527D /* DietTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTableViewController.swift; sourceTree = "<group>"; };
+		C424A7122241DCC80054527D /* DietCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietCell.swift; sourceTree = "<group>"; };
 		C46CC761223754D70074073C /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
 		C48A6C8D223760D200A8AEB0 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
 		C48A6C8F2237A46900A8AEB0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 				1E85EA79223736B7007C1926 /* Main.storyboard */,
 				C4071384223CEFDA0090F763 /* HealthKitSetupAssistant.swift */,
 				C4D886C8223DE52C00625387 /* UserGoalsViewController.swift */,
+				C424A70E2241BEC90054527D /* DietTableViewController.swift */,
+				C424A7122241DCC80054527D /* DietCell.swift */,
 			);
 			path = FoodFindr;
 			sourceTree = "<group>";
@@ -675,10 +681,12 @@
 				C4E97E2521F12AE5002A8800 /* WorkoutsViewController.swift in Sources */,
 				C4FDA36D21F2DD410085FAA0 /* MealsViewController.swift in Sources */,
 				C48A6C8E223760D200A8AEB0 /* ProfileDataStore.swift in Sources */,
+				C424A7132241DCC80054527D /* DietCell.swift in Sources */,
 				C48A6C902237A46900A8AEB0 /* ProfileViewController.swift in Sources */,
 				1E26C59F223287FE00897287 /* MeasurementHelper.swift in Sources */,
 				1E9FC47D222B6A5900E0F464 /* LoginViewController.swift in Sources */,
 				A6CC62D6223D167100404691 /* RecipeCell.swift in Sources */,
+				C424A70F2241BEC90054527D /* DietTableViewController.swift in Sources */,
 				C46CC762223754D70074073C /* UserHealthProfile.swift in Sources */,
 				C4E97E2321F12AE5002A8800 /* AppDelegate.swift in Sources */,
 				1EB43EBD2232B444001AC258 /* Constants.swift in Sources */,
