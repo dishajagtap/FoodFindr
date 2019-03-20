@@ -24,6 +24,7 @@ class Recipe {
 }
 
 class MealsViewController: UIViewController {
+    var currentCaloriesAfterSelectingFood:Double = MealsViewController().currentCalories
     @IBOutlet weak var recipeTableView: UITableView!
     var filters: [String] = [
         "Protein",
