@@ -662,7 +662,6 @@
         <!--Navigation Controller-->
         <scene sceneID="5Mx-i9-thU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6G2-pd-Ugw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="BrI-8J-NVj" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rwW-9S-Wry">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -673,6 +672,7 @@
                         <segue destination="COO-Ok-RTw" kind="relationship" relationship="rootViewController" id="8UX-ia-NIG"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6G2-pd-Ugw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="-879"/>
         </scene>

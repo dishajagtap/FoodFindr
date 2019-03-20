@@ -10,7 +10,8 @@ import UIKit
 import HealthKit
 
 class WorkoutsViewController: UIViewController {
-    // var currentCaloriesAfterSelectingFood:Double = MealsViewController().currentCalories
+    
+    var currentCaloriesAfterSelectingFood:Double = MealsViewController().currentCalories
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -101,7 +102,7 @@ class WorkoutsViewController: UIViewController {
     }
     
     func updateRemainingCalories() {
-        remainingCaloriesValue.text = "\(self.remainingCalories() + ActiveEnergyBurnedDataStore.getActiveEnergyBurned()) kCal"
+        remainingCaloriesValue.text = "\(self.remainingCalories() + ActiveEnergyBurnedDataStore.getActiveEnergyBurned() - currentCaloriesAfterSelectingFood) kCal"
     }
 
     @IBOutlet public weak var caloriesBurnedLabel: UILabel!
@@ -112,7 +113,5 @@ class WorkoutsViewController: UIViewController {
     @IBOutlet weak var profilePicture: UIImageView!
     
     @IBOutlet weak var remainingCaloriesValue: UILabel!
-    @IBOutlet weak var BMRValue: UILabel!
-    let activeEnergy = ActiveEnergyBurnedDataStore.getActiveEnergyBurned()
 
 }
