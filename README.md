@@ -1,7 +1,31 @@
 # FoodFindr
 CS 125 Project
 
-# Notes
+# Installation
+From main directory
+
+```console
+foo@bar:FoodFindr$ cd FoodFindr/
+foo@bar:FoodFindr$ pod install
+foo@bar:FoodFindr$ open FoodFindr.xcworkspace
+```
+The build and run the application on the simulator.
+
+# Running the Application
+
+After starting the application, open the Health app and add in the following information:
+
+- Birthdate
+- Sex
+- Weight
+- Height
+- Active Energy Burned
+
+If the following values are not added manually in the Health app then the myFoodFindr application won't have any data to pull from.
+
+Finally, go to the home button and open the FoodFindr application.
+
+# Dev Notes
 ```
 Yohana Notes:
 - added the use of Cocoapods, Firebase
