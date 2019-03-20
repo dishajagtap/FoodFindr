@@ -89,6 +89,10 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setCell(recipe: recipe)
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let caloriesBurnedIntVal = WorkoutsViewController().activeEnergy
+        currentCalories = caloriesBurnedIntVal + Double(recipes[indexPath.row].calories)
+    }
 }
 
 extension MealsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
