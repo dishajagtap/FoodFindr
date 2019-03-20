@@ -24,7 +24,7 @@ class Recipe {
 }
 
 class MealsViewController: UIViewController {
-    var currentCaloriesAfterSelectingFood:Double = MealsViewController().currentCalories
+    var currentCalories:Double = 0.0
     @IBOutlet weak var recipeTableView: UITableView!
     var filters: [String] = [
         "Protein",
@@ -93,6 +93,9 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let caloriesBurnedIntVal = WorkoutsViewController().activeEnergy
         currentCalories = caloriesBurnedIntVal + Double(recipes[indexPath.row].calories)
+        print("Burned Calories: \(caloriesBurnedIntVal)")
+        print("Recipe Calories: \(recipes[indexPath.row].calories)")
+        print("Current Calories: \(currentCalories)")
     }
 }
 
