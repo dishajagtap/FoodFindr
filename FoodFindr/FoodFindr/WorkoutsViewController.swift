@@ -10,8 +10,8 @@ import UIKit
 import HealthKit
 
 class WorkoutsViewController: UIViewController {
-    // var currentCaloriesAfterSelectingFood:Double = MealsViewController().currentCalories
-
+    var currentCaloriesAfterSelectingFood:Double = MealsViewController().currentCalories
+    var RemainingCalories:Double = 2500.0
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -61,6 +61,7 @@ class WorkoutsViewController: UIViewController {
     func fetchAndUpdateAEB() {
         ActiveEnergyBurnedDataStore.fetchActiveEnergyBurned()
         updateAEBLabel()
+        updateRemainingCaloriesLabel()
     }
 
     func updateAEBLabel() {
@@ -69,7 +70,12 @@ class WorkoutsViewController: UIViewController {
             self.caloriesBurnedValue.text = "\(activeEnergyBurned) kCal"
         }
     }
-
+    func updateRemainingCaloriesLabel() {
+        DispatchQueue.main.async {
+            self.RemainingCalories = self.currentCaloriesAfterSelectingFood
+            self.remainingCaloriesValue.text = "\(self.RemainingCalories) kCal"
+        }
+    }
     func setUpBackgroundDeliveryForAEB() {
         let sampleType = HKSampleType.quantityType(forIdentifier: .activeEnergyBurned)!
         let query = HKObserverQuery(sampleType: sampleType, predicate: nil) {
@@ -84,6 +90,7 @@ class WorkoutsViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var remainingCaloriesValue: UILabel!
     @IBOutlet public weak var caloriesBurnedLabel: UILabel!
     @IBOutlet public weak var caloriesBurnedValue: UILabel!
     @IBOutlet weak var dateMonth: UILabel!
