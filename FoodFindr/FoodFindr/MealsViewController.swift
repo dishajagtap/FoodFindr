@@ -101,8 +101,7 @@ extension MealsViewController: UITableViewDelegate, UITableViewDataSource {
         currentCalories = Double(recipes[indexPath.row].calories)
         print("Recipe Calories: \(recipes[indexPath.row].calories)")
         print("Current Calories: \(currentCalories)")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeCell
-        if let url = URL(string: cell.recipeVal.url) {
+        if let url = URL(string: recipes[indexPath.row].url) {
             UIApplication.shared.open(url, options: [:])
         }
     }
